@@ -42,8 +42,10 @@ export default function Residential() {
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImage} 
-              alt="Luxury residential wellness amenity" 
+              alt="Luxury residential building with wellness amenity space" 
               className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
             />
             <div className="absolute inset-0 bg-gradient-to-l from-background/95 via-background/80 to-background/40" />
           </div>
@@ -56,7 +58,7 @@ export default function Residential() {
               className="max-w-3xl"
             >
               <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" />
+                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" width={400} height={400} />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Building className="w-4 h-4" />
@@ -68,7 +70,7 @@ export default function Residential() {
               </motion.h1>
               
               <motion.p variants={FADE_UP} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-                Elevate your property value with a turnkey BH Labs Recovery Pod. World-class biohacking equipment that drives resident satisfaction and net-positive HOA revenue.
+                Elevate your property value with a turnkey BH Labs Recovery Pod. World-class biohacking equipment that drives resident satisfaction and net-positive HOA revenue. No additional staff required.
               </motion.p>
               
               <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-4">
@@ -78,10 +80,9 @@ export default function Residential() {
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm" asChild>
-                  <a href="#calculator">
-                    <TrendingUp className="mr-2 w-5 h-5" />
-                    ROI Calculator
+                <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm" asChild data-testid="btn-hero-secondary">
+                  <a href="#equipment">
+                    View Equipment
                   </a>
                 </Button>
               </motion.div>
@@ -89,7 +90,7 @@ export default function Residential() {
           </div>
 
           <motion.a
-            href="#value"
+            href="#calculator"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
@@ -105,8 +106,20 @@ export default function Residential() {
           </motion.a>
         </section>
 
-        {/* Value Proposition */}
-        <section className="py-24 bg-card" id="value">
+        {/* ROI Calculator — Immediately after hero */}
+        <ROICalculator type="residential" />
+
+        {/* TL;DR Answer Block */}
+        <section className="py-8 bg-secondary/30 border-b border-border">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-base md:text-lg text-foreground max-w-4xl mx-auto text-center leading-relaxed">
+              <strong>BH Labs installs turnkey Recovery Pods</strong> in luxury residential buildings and HOA communities. A complete pod costs approximately <strong>$45,000</strong>, generates <strong>$4,500+/month</strong> in new HOA revenue, and achieves payback in approximately <strong>10 months</strong>. According to the <strong>Global Wellness Institute (2025)</strong>, wellness-integrated properties see a <strong>10-25% increase in property value</strong>.
+            </p>
+          </div>
+        </section>
+
+        {/* How does a Recovery Pod increase property value? */}
+        <section className="py-24 bg-background" id="value">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <motion.div 
@@ -116,24 +129,24 @@ export default function Residential() {
                 variants={STAGGER}
               >
                 <motion.h2 variants={FADE_UP} className="text-3xl md:text-5xl font-serif text-foreground mb-6">
-                  Differentiate Your Real Estate
+                  How does a Recovery Pod increase property value?
                 </motion.h2>
                 <motion.p variants={FADE_UP} className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Pools and standard gyms are expected. High-end recovery tech is the new differentiator. 
-                  According to the Global Wellness Institute's 2025 report, wellness-integrated properties see a 
-                  <strong className="text-foreground font-semibold"> 10-25% increase in property value</strong>.
+                  According to the <strong className="text-foreground">Global Wellness Institute's 2025 report</strong>, wellness-integrated properties see a 
+                  <strong className="text-foreground"> 10-25% increase in property value</strong>. That's not a soft claim — it's a measurable return backed by industry data.
                 </motion.p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <motion.div variants={FADE_UP} className="bg-background p-6 rounded-2xl border border-border">
+                  <motion.div variants={FADE_UP} className="bg-card p-6 rounded-2xl border border-border">
                     <TrendingUp className="w-8 h-8 text-primary mb-4" />
                     <div className="text-2xl font-serif text-foreground mb-1">$4,500/mo</div>
                     <div className="text-sm text-muted-foreground">New Revenue based on 150 units at $30/mo wellness fee</div>
                   </motion.div>
-                  <motion.div variants={FADE_UP} className="bg-background p-6 rounded-2xl border border-border">
+                  <motion.div variants={FADE_UP} className="bg-card p-6 rounded-2xl border border-border">
                     <Clock className="w-8 h-8 text-primary mb-4" />
                     <div className="text-2xl font-serif text-foreground mb-1">10 Months</div>
-                    <div className="text-sm text-muted-foreground">Average payback period on ~$45K complete pod investment</div>
+                    <div className="text-sm text-muted-foreground">Average payback period on ~$45,000 complete pod investment</div>
                   </motion.div>
                 </div>
               </motion.div>
@@ -146,7 +159,7 @@ export default function Residential() {
                 className="relative"
               >
                 <div className="aspect-square rounded-full bg-secondary/30 absolute -inset-4 blur-3xl -z-10" />
-                <img src={saunaImage} alt="Premium Residential Sauna" className="rounded-2xl shadow-xl border border-border/50" />
+                <img src={saunaImage} alt="Premium infrared sauna in luxury residential wellness pod" className="rounded-2xl shadow-xl border border-border/50" loading="lazy" />
                 
                 <div className="absolute -bottom-8 -left-8 bg-card p-6 rounded-2xl shadow-xl border border-border max-w-xs">
                   <div className="text-sm font-medium uppercase text-muted-foreground mb-2">Net Annual Revenue</div>
@@ -158,7 +171,36 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* The Pod Ecosystem */}
+        {/* What's the cost of NOT offering premium wellness? */}
+        <section className="py-16 bg-red-50 border-y border-red-200">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={FADE_UP}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-6">What's the cost of <span className="text-red-600 italic">not</span> offering premium wellness?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-xl p-6 border border-red-200 shadow-sm">
+                  <div className="text-3xl font-serif text-red-600 mb-2">$45K+</div>
+                  <p className="text-sm text-muted-foreground">Annual net revenue left on the table from unused amenity space</p>
+                </div>
+                <div className="bg-white rounded-xl p-6 border border-red-200 shadow-sm">
+                  <div className="text-3xl font-serif text-red-600 mb-2">10-25%</div>
+                  <p className="text-sm text-muted-foreground">Property value increase you're missing — <em>Global Wellness Institute, 2025</em></p>
+                </div>
+                <div className="bg-white rounded-xl p-6 border border-red-200 shadow-sm">
+                  <div className="text-3xl font-serif text-red-600 mb-2">Every Day</div>
+                  <p className="text-sm text-muted-foreground">Residents compare amenities. Competing properties are already adding wellness.</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* What equipment is included in a Recovery Pod? */}
         <section className="py-24 bg-background" id="equipment">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
@@ -168,8 +210,8 @@ export default function Residential() {
               variants={FADE_UP}
               className="text-center max-w-3xl mx-auto mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">The Recovery Pod Ecosystem</h2>
-              <p className="text-lg text-muted-foreground">A complete, clinical-grade wellness center packaged perfectly for residential amenities. Installed and supported by experts.</p>
+              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">What equipment is included in a Recovery Pod?</h2>
+              <p className="text-lg text-muted-foreground">Seven clinical-grade modalities packaged perfectly for residential amenities. Installed and supported by experts.</p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -191,7 +233,7 @@ export default function Residential() {
                   className="group rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow"
                 >
                   <div className="overflow-hidden bg-neutral-50 flex items-center justify-center" style={{ maxHeight: '400px' }}>
-                    <img src={item.image} alt={item.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" style={{ maxHeight: '400px' }} />
+                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod equipment for luxury residential`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" style={{ maxHeight: '400px' }} loading="lazy" />
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-medium text-foreground mb-1">{item.name}</h3>
@@ -203,7 +245,7 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* Service & Support */}
+        {/* How is the Recovery Pod operated and maintained? */}
         <section className="py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -214,15 +256,15 @@ export default function Residential() {
                 variants={STAGGER}
                 className="space-y-8"
               >
-                <motion.h2 variants={FADE_UP} className="text-3xl md:text-4xl font-serif">Hands-Off Operation</motion.h2>
+                <motion.h2 variants={FADE_UP} className="text-3xl md:text-4xl font-serif">How is the Recovery Pod operated and maintained?</motion.h2>
                 <motion.p variants={FADE_UP} className="text-primary-foreground/80 text-lg">
-                  We know property managers are busy. The Recovery Pod is designed to be a completely turnkey, low-maintenance amenity.
+                  We know property managers are busy. The Recovery Pod is designed to be a completely turnkey, low-maintenance amenity — no dedicated staff required.
                 </motion.p>
 
                 <div className="space-y-6 mt-8">
                   {[
-                    { icon: ShieldCheck, title: "1-Year Comprehensive Warranty", desc: "Full coverage on all clinical equipment." },
-                    { icon: Zap, title: "Technical Support & Maintenance", desc: "Rapid response times from our Miami-based team." },
+                    { icon: ShieldCheck, title: "1-Year Comprehensive Warranty", desc: "Full coverage on all clinical equipment from our Miami-based team." },
+                    { icon: Zap, title: "Technical Support & Maintenance", desc: "Rapid response times with same-day service availability." },
                     { icon: Leaf, title: "Self-Guided Protocols", desc: "30+ research-backed protocols residents can use safely without supervision." }
                   ].map((feature, i) => (
                     <motion.div key={i} variants={FADE_UP} className="flex gap-4">
@@ -245,7 +287,7 @@ export default function Residential() {
                 transition={{ duration: 0.5 }}
                 className="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl relative"
               >
-                <img src={hbotImage} alt="Resident using HBOT" className="absolute inset-0 w-full h-full object-cover" />
+                <img src={hbotImage} alt="Resident using HBOT chamber in luxury condo wellness pod" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-8">
                   <div className="text-primary-foreground">
                     <div className="font-serif text-2xl mb-2">"A massive draw for new buyers."</div>
@@ -257,13 +299,11 @@ export default function Residential() {
           </div>
         </section>
 
-        <ROICalculator type="residential" />
-
         <FAQSection items={[
           { question: "How much revenue can a residential Recovery Pod generate?", answer: "A BH Labs Recovery Pod generates approximately $4,500 per month for an HOA with 150 units at a $30/month wellness fee. That's $45,000+ in net annual revenue after payback." },
           { question: "What is the payback period for a residential Recovery Pod?", answer: "Approximately 10 months. The complete pod investment is about $45,000, paid back through monthly wellness fees." },
           { question: "Does a Recovery Pod increase property value?", answer: "Yes. According to the Global Wellness Institute's 2025 report, wellness-integrated properties see a 10-25% increase in property value." },
-          { question: "What equipment is included?", answer: "Each Recovery Pod includes an HBOT chamber, red light therapy panels, infrared sauna, lymphatic drainage suits, PEMF devices, and custom architectural design." },
+          { question: "What equipment is included?", answer: "Each Recovery Pod includes an HBOT chamber, red light therapy panels, infrared sauna, lymphatic drainage suits, PEMF devices, and custom architectural design — seven clinical-grade modalities total." },
           { question: "Does the property need dedicated staff?", answer: "No. The Recovery Pod includes 30+ self-guided, research-backed protocols that residents can use safely without supervision. BH Labs also provides a 1-year comprehensive warranty and technical support." },
           { question: "How is the Recovery Pod maintained?", answer: "BH Labs provides a comprehensive 1-year warranty and ongoing technical support from our Miami-based team. The pod is designed for minimal maintenance with rapid response service." }
         ]} />

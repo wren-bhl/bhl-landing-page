@@ -24,7 +24,7 @@ export function FAQSection({ items }: FAQSectionProps) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">What do property owners ask about Recovery Pods?</h2>
           <p className="text-muted-foreground text-lg">Everything you need to know about BH Labs Recovery Pods.</p>
         </motion.div>
 

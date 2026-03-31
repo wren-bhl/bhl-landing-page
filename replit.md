@@ -59,11 +59,29 @@ React + Vite landing pages for BH Labs Recovery Pod — a biohacking/wellness co
   - `/residential` — Luxury Residential / HOAs (targeting property managers and HOA boards)
 - Frontend-only (no backend required)
 - Uses framer-motion for scroll-triggered animations
-- AI-generated images for hero visuals and equipment photos
-- Lead capture forms (visual only, no backend submission)
-- Interactive ROI Calculator on both pages (sliders for rooms/units, rates, occupancy)
+- Real equipment photos (7 modalities) with `-auto-orient` processing, `object-contain`, max-height 400px
+- Logo files: `logo-dark.png` (light sections), `logo-light.png` (dark sections) — 400×400px, transparent bg
+- Interactive ROI Calculator immediately below hero on both pages:
+  - Hotel: sliders for rooms, surcharge/night, occupancy, sessions/day, session price, operating cost
+  - Residential: sliders for units, monthly fee, participation rate, operating cost
+  - Real-time results with loss aversion messaging, cap-rate property value estimate, emerald green results panel
+  - "Get My Full Property Projection" CTA
+- Loss aversion "cost of NOT acting" sections (red-themed) on both pages
+- TL;DR answer blocks for AEO (40-90 word citable summaries)
+- Question-based H2 headings throughout for AI answer engines
+- Source citations: Global Wellness Institute (2024/2025)
 - FAQ sections with accordion UI and matching FAQPage JSON-LD schema
-- SEO/AEO optimized: JSON-LD (LocalBusiness, Product, FAQPage), per-route canonical URLs, OG/Twitter meta tags, question-format headings, citable answer blocks
+- Contact form with thank-you state overlay, qualification fields (unit count, property type), UTM capture
+- Prominent green ROI Calculator button in navbar (upper right)
+- SEO/AEO optimized:
+  - JSON-LD: Organization, Product, FAQPage, BreadcrumbList, WebPage (all with dateModified)
+  - Per-route canonical URLs, OG/Twitter meta tags
+  - `robots.txt` allowing AI crawlers (OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Bingbot)
+  - `llms.txt` for AI system site comprehension
+  - `<meta name="robots" content="index, follow">`
+  - Lazy loading on below-fold images, width/height for CLS
+  - Title tags under 60 chars with primary keyword
+- Brand: Do NOT use "Medical-Grade" for Red Light Therapy
 - Contact: info@thebiohacklab.com | www.bh-labs.com | 954-870-5814
 
 ### `artifacts/api-server` (`@workspace/api-server`)
