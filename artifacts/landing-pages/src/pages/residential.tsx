@@ -78,6 +78,12 @@ export default function Residential() {
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
+                <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm" asChild>
+                  <a href="#calculator">
+                    <TrendingUp className="mr-2 w-5 h-5" />
+                    ROI Calculator
+                  </a>
+                </Button>
               </motion.div>
             </motion.div>
           </div>
@@ -87,14 +93,14 @@ export default function Residential() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-muted-foreground/60 hover:text-foreground transition-colors cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
           >
-            <span className="text-xs font-medium uppercase tracking-widest">Scroll</span>
+            <span className="text-sm font-semibold uppercase tracking-widest">Scroll Down</span>
             <motion.div
-              animate={{ y: [0, 8, 0] }}
+              animate={{ y: [0, 12, 0] }}
               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             >
-              <ChevronDown className="w-6 h-6" />
+              <ChevronDown className="w-10 h-10" />
             </motion.div>
           </motion.a>
         </section>
