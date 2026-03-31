@@ -36,7 +36,7 @@ export default function Residential() {
       <SchemaMarkup page="residential" />
       <Navbar />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-36">
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
@@ -56,7 +56,7 @@ export default function Residential() {
               className="max-w-3xl"
             >
               <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 mb-4" />
+                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Building className="w-4 h-4" />

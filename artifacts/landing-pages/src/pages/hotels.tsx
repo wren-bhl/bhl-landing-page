@@ -42,7 +42,7 @@ export default function Hotels() {
       <SchemaMarkup page="hotels" />
       <Navbar />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-36">
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
@@ -62,7 +62,7 @@ export default function Hotels() {
               className="max-w-3xl"
             >
               <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 mb-4" />
+                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Hotel className="w-4 h-4" />
@@ -339,7 +339,7 @@ export default function Hotels() {
               >
                 <div className="bg-background/5 p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
                   <div className="flex justify-center mb-6">
-                    <img src={logoLight} alt="BH Labs" className="w-28 h-28" />
+                    <img src={logoLight} alt="BH Labs" className="w-56 h-56" />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
                     "Wellness tourists spend 41-175% more than average travelers."
