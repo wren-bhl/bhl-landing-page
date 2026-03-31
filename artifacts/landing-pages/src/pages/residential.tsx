@@ -1,6 +1,9 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ContactForm } from "@/components/ui/contact-form";
+import { ROICalculator } from "@/components/ui/roi-calculator";
+import { FAQSection } from "@/components/ui/faq-section";
+import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { 
@@ -24,6 +27,7 @@ const STAGGER = {
 export default function Residential() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SchemaMarkup page="residential" />
       <Navbar />
 
       <main className="flex-grow pt-20">
@@ -214,6 +218,17 @@ export default function Residential() {
             </div>
           </div>
         </section>
+
+        <ROICalculator type="residential" />
+
+        <FAQSection items={[
+          { question: "How much revenue can a residential Recovery Pod generate?", answer: "A BH Labs Recovery Pod generates approximately $4,500 per month for an HOA with 150 units at a $30/month wellness fee. That's $45,000+ in net annual revenue after payback." },
+          { question: "What is the payback period for a residential Recovery Pod?", answer: "Approximately 10 months. The complete pod investment is about $45,000, paid back through monthly wellness fees." },
+          { question: "Does a Recovery Pod increase property value?", answer: "Yes. According to the Global Wellness Institute's 2025 report, wellness-integrated properties see a 10-25% increase in property value." },
+          { question: "What equipment is included?", answer: "Each Recovery Pod includes an HBOT chamber, red light therapy panels, infrared sauna, lymphatic drainage suits, PEMF devices, and custom architectural design." },
+          { question: "Does the property need dedicated staff?", answer: "No. The Recovery Pod includes 30+ self-guided, research-backed protocols that residents can use safely without supervision. BH Labs also provides a 1-year comprehensive warranty and technical support." },
+          { question: "How is the Recovery Pod maintained?", answer: "BH Labs provides a comprehensive 1-year warranty and ongoing technical support from our Miami-based team. The pod is designed for minimal maintenance with rapid response service." }
+        ]} />
 
         {/* Contact Section */}
         <section className="py-24 bg-card relative overflow-hidden" id="contact">

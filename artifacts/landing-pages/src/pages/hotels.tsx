@@ -1,6 +1,9 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ContactForm } from "@/components/ui/contact-form";
+import { ROICalculator } from "@/components/ui/roi-calculator";
+import { FAQSection } from "@/components/ui/faq-section";
+import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { 
@@ -30,6 +33,7 @@ const STAGGER = {
 export default function Hotels() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <SchemaMarkup page="hotels" />
       <Navbar />
 
       <main className="flex-grow pt-20">
@@ -332,17 +336,16 @@ export default function Hotels() {
                 variants={FADE_UP}
               >
                 <div className="bg-background/5 p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
-                  <h3 className="text-2xl font-serif mb-6 text-primary-foreground">"The most requested amenity."</h3>
-                  <p className="text-primary-foreground/80 italic mb-6">
-                    Guests are no longer just looking for a treadmill; they want dedicated recovery. The BH Labs pod allowed us to upgrade our offering overnight and create a new, high-margin revenue stream.
-                  </p>
+                  <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
+                    "Wellness tourists spend 41-175% more than average travelers."
+                  </h3>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
-                      <span className="text-primary font-bold">GM</span>
+                      <span className="text-primary font-bold text-sm">GWI</span>
                     </div>
                     <div>
-                      <div className="font-medium">General Manager</div>
-                      <div className="text-primary-foreground/60 text-sm">Miami Luxury Resort</div>
+                      <div className="font-medium">Global Wellness Institute</div>
+                      <div className="text-primary-foreground/60 text-sm">Global Wellness Economy Report</div>
                     </div>
                   </div>
                 </div>
@@ -350,6 +353,17 @@ export default function Hotels() {
             </div>
           </div>
         </section>
+
+        <ROICalculator type="hotel" />
+
+        <FAQSection items={[
+          { question: "How much revenue can a hotel wellness pod generate?", answer: "A BH Labs Recovery Pod generates approximately $27,000 per month — $21,000 from ADR wellness surcharges ($5/night across 200 rooms at 70% occupancy) plus $6,000 from a-la-carte walk-in sessions. That's $324,000 in annual revenue." },
+          { question: "What is the payback period for a hotel Recovery Pod?", answer: "Less than 2 months. The complete pod investment is approximately $45,000, and at $27,000/month in combined revenue, the investment pays for itself in under 60 days." },
+          { question: "Does the hotel need to hire additional staff?", answer: "No. BH Labs trains and certifies your existing spa staff to operate the Recovery Pod. Zero additional hires required." },
+          { question: "What equipment is included in a Recovery Pod?", answer: "Each Recovery Pod includes an HBOT (Hyperbaric Oxygen Therapy) chamber, red light therapy panels, an infrared sauna, lymphatic drainage suits, and PEMF (Pulsed Electromagnetic Field) devices." },
+          { question: "How much space does a Recovery Pod require?", answer: "BH Labs provides custom architectural design to fit your available space. Our in-house architect configures the layout to maximize efficiency within your property." },
+          { question: "How do wellness tourists spend compared to average travelers?", answer: "According to the Global Wellness Institute, wellness tourists spend 41-175% more than average travelers, making a Recovery Pod a powerful driver of higher-value bookings." }
+        ]} />
 
         {/* Contact Section */}
         <section className="py-24 bg-background relative overflow-hidden" id="contact">

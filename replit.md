@@ -61,6 +61,9 @@ React + Vite landing pages for BH Labs Recovery Pod — a biohacking/wellness co
 - Uses framer-motion for scroll-triggered animations
 - AI-generated images for hero visuals and equipment photos
 - Lead capture forms (visual only, no backend submission)
+- Interactive ROI Calculator on both pages (sliders for rooms/units, rates, occupancy)
+- FAQ sections with accordion UI and matching FAQPage JSON-LD schema
+- SEO/AEO optimized: JSON-LD (LocalBusiness, Product, FAQPage), per-route canonical URLs, OG/Twitter meta tags, question-format headings, citable answer blocks
 - Contact: info@thebiohacklab.com | www.bh-labs.com | 954-870-5814
 
 ### `artifacts/api-server` (`@workspace/api-server`)
