@@ -60,3 +60,15 @@ id = "o1l1BZGI7Z2pjz-2Fiv_0"
 uri = "file://attached_assets/generated_images/generated_image_4.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "ipeY2z-HroV7SFag65m-c"
+uri = "file://artifacts/hotel-deck/public/hero-wellness.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "VboYJJtYzkttpfQyxYwlh"
+uri = "file://artifacts/hotel-deck/public/luxury-resort.png"
+type = "image"
+title = "generated_image"

@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/hotel-deck/"
+title = "BH Labs Recovery Pod - Hotel Pitch Deck"
+version = "1.0.0"
+id = "artifacts/hotel-deck"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/hotel-deck/" ]
+localPort = 19680
+
+[services.development]
+run = "pnpm --filter @workspace/hotel-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hotel-deck", "run", "build" ]
+publicDir = "artifacts/hotel-deck/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19680"
+BASE_PATH = "/hotel-deck/"

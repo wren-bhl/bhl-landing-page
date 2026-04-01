@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a1b2c3d4-1111-4000-8000-000000000001",
+    "position": 1,
+    "filepath": "src/pages/slides/TitleSlide.tsx",
+    "title": "The Recovery Pod",
+    "description": "Title slide with BH Labs branding and hero image",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-2222-4000-8000-000000000002",
+    "position": 2,
+    "filepath": "src/pages/slides/OpportunitySlide.tsx",
+    "title": "The Opportunity",
+    "description": "Market stats showing wellness economy opportunity",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-3333-4000-8000-000000000003",
+    "position": 3,
+    "filepath": "src/pages/slides/ProblemSlide.tsx",
+    "title": "The Problem",
+    "description": "Traditional hotel spa economics and why they don't scale",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-4444-4000-8000-000000000004",
+    "position": 4,
+    "filepath": "src/pages/slides/SolutionSlide.tsx",
+    "title": "The Solution",
+    "description": "Recovery Pod specifications and equipment imagery",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-5555-4000-8000-000000000005",
+    "position": 5,
+    "filepath": "src/pages/slides/PricingSlide.tsx",
+    "title": "Pricing Options",
+    "description": "Four pricing tiers from Single to IV Therapy add-on",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-6666-4000-8000-000000000006",
+    "position": 6,
+    "filepath": "src/pages/slides/ExperienceSlide.tsx",
+    "title": "The Guest Experience",
+    "description": "Session tiers showing Signature and Premium options",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-7777-4000-8000-000000000007",
+    "position": 7,
+    "filepath": "src/pages/slides/ROISlide.tsx",
+    "title": "ROI Projections",
+    "description": "Static financial tables with Conservative, Moderate, Demonstrated scenarios",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-8888-4000-8000-000000000008",
+    "position": 8,
+    "filepath": "src/pages/slides/CompetitiveSlide.tsx",
+    "title": "Competitive Landscape",
+    "description": "Comparison table showing BH Labs vs competitors",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-9999-4000-8000-000000000009",
+    "position": 9,
+    "filepath": "src/pages/slides/ClosingSlide.tsx",
+    "title": "Let's Build This Together",
+    "description": "Closing slide with CTA and contact information",
+    "speakerNotes": ""
+  }
+]

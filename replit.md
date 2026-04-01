@@ -125,6 +125,19 @@ Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used b
 
 Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
 
+### `artifacts/hotel-deck` (`@workspace/hotel-deck`)
+
+Slide deck artifact for BH Labs Recovery Pod generic hotel pitch. 9 slides covering title, opportunity, problem, solution, pricing, guest experience, ROI projections, competitive landscape, and closing CTA.
+
+- Built with React + Tailwind CSS (slides artifact type)
+- BH Labs branding: dark emerald (#0A2E1C) primary, gold (#C8A951) accent, cream (#F5F1EA) background
+- Typography: Playfair Display (display serif) + Inter (body sans)
+- Uses existing equipment photos from landing-pages + AI-generated hero/resort images
+- Static ROI table with Conservative/Moderate/Demonstrated scenarios
+- Competitive comparison: Traditional Spa vs Restore vs Major Chain vs BH Labs
+- Generic language (no chain-specific references) for broad hotel/resort market
+- Exportable to PPTX via slides viewer
+
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
