@@ -27,8 +27,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/fitness" className="text-primary-foreground/70 hover:text-primary-foreground text-sm transition-colors" data-testid="link-footer-fitness">
+                  Fitness & Padel Clubs
+                </Link>
+              </li>
+              <li>
                 <Link href="/residential" className="text-primary-foreground/70 hover:text-primary-foreground text-sm transition-colors" data-testid="link-footer-residential">
                   Luxury Residential
+                </Link>
+              </li>
+              <li>
+                <Link href="/athletics" className="text-primary-foreground/70 hover:text-primary-foreground text-sm transition-colors" data-testid="link-footer-athletics">
+                  University Athletics
                 </Link>
               </li>
             </ul>
@@ -61,7 +71,7 @@ export function Footer() {
         </div>
         
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between text-sm text-primary-foreground/50">
-          <p>© {new Date().getFullYear()} BH Labs. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} BH Labs. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Miami, FL</p>
         </div>
       </div>

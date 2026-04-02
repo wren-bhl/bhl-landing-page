@@ -73,16 +73,11 @@ export default function Residential() {
                 Elevate your property value with a turnkey BH Labs Recovery Pod. World-class biohacking equipment that drives resident satisfaction and net-positive HOA revenue. No additional staff required.
               </motion.p>
               
-              <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-4">
+              <motion.div variants={FADE_UP}>
                 <Button size="lg" className="h-14 px-8 text-base" asChild data-testid="btn-hero-cta">
                   <a href="#contact">
                     Request a Property Assessment
                     <ArrowRight className="ml-2 w-5 h-5" />
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm" asChild data-testid="btn-hero-secondary">
-                  <a href="#equipment">
-                    View Equipment
                   </a>
                 </Button>
               </motion.div>
