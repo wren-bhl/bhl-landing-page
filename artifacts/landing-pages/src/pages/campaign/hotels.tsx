@@ -27,7 +27,7 @@ export default function CampaignHotels() {
     <div className="min-h-screen flex flex-col bg-background">
       <main className="flex-grow">
         {/* 1. Hero Section */}
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
               src={heroImage}
@@ -39,27 +39,27 @@ export default function CampaignHotels() {
             <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
             <motion.div
               initial="hidden"
               animate="visible"
               variants={STAGGER}
               className="max-w-3xl"
             >
-              <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" width={400} height={400} />
+              <motion.div variants={FADE_UP} className="mb-4 md:mb-6">
+                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 md:w-48 md:h-48 mb-2 md:mb-4" width={400} height={400} />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Hotel className="w-4 h-4" />
                 <span>For Hotels & Resorts</span>
               </motion.div>
 
-              <motion.h1 variants={FADE_UP} className="text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight text-foreground mb-6 leading-[1.1]">
+              <motion.h1 variants={FADE_UP} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1]">
                 Turn Idle Space Into <span className="text-primary italic">Wellness Revenue</span>
               </motion.h1>
 
-              <motion.p variants={FADE_UP} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-                Install a turnkey BH Labs Recovery Pod in your hotel. Generate <span className="text-primary font-bold text-2xl md:text-3xl">$25K+ monthly revenue</span> with zero additional staff. Clinical biohacking meets luxury hospitality.
+              <motion.p variants={FADE_UP} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-10 max-w-2xl leading-relaxed">
+                Install a turnkey BH Labs Recovery Pod in your hotel. Generate <span className="text-primary font-bold text-xl md:text-2xl lg:text-3xl">$25K+ monthly revenue</span> with zero additional staff. Clinical biohacking meets luxury hospitality.
               </motion.p>
 
               <motion.div variants={FADE_UP}>
@@ -78,7 +78,7 @@ export default function CampaignHotels() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
           >
             <span className="text-sm font-semibold uppercase tracking-widest">Scroll Down</span>
             <motion.div
@@ -91,16 +91,16 @@ export default function CampaignHotels() {
         </section>
 
         {/* 2. Value Proposition — 5 Benefit Cards */}
-        <section className="py-24 bg-background" id="value">
+        <section className="py-12 md:py-24 bg-background" id="value">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">Why Hotels Are Adding Recovery Pods</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4">Why Hotels Are Adding Recovery Pods</h2>
               <p className="text-lg text-muted-foreground">A single installation unlocks premium guest wellness, incremental revenue, and a differentiated hospitality experience.</p>
             </motion.div>
 
@@ -152,16 +152,16 @@ export default function CampaignHotels() {
         </section>
 
         {/* 3. Outcomes / ROI */}
-        <section className="py-24 bg-card" id="roi">
+        <section className="py-12 md:py-24 bg-card" id="roi">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">The Revenue Impact</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4">The Revenue Impact</h2>
               <p className="text-lg text-muted-foreground">Real numbers from a single Recovery Pod installation in a 200-room hotel.</p>
             </motion.div>
 
@@ -208,16 +208,16 @@ export default function CampaignHotels() {
         </section>
 
         {/* 4. How It Works — 3 Steps */}
-        <section className="py-24 bg-background">
+        <section className="py-12 md:py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">How It Works</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4">How It Works</h2>
               <p className="text-lg text-muted-foreground">From consultation to revenue in as little as 4-6 weeks.</p>
             </motion.div>
 
@@ -270,7 +270,7 @@ export default function CampaignHotels() {
         </section>
 
         {/* 5. Lead Capture Form */}
-        <section className="py-24 bg-card relative overflow-hidden" id="contact">
+        <section className="py-12 md:py-24 bg-card relative overflow-hidden" id="contact">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/30 rounded-l-full blur-3xl -z-10 transform translate-x-1/2" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
@@ -284,16 +284,16 @@ export default function CampaignHotels() {
         </section>
 
         {/* 6. Trust / Credibility */}
-        <section className="py-24 bg-primary text-primary-foreground">
+        <section className="py-12 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <motion.h2
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   variants={FADE_UP}
-                  className="text-3xl md:text-5xl font-serif mb-6"
+                  className="text-2xl md:text-3xl lg:text-5xl font-serif mb-6"
                 >
                   Trusted by Leading Hospitality & Wellness Brands
                 </motion.h2>
@@ -333,9 +333,9 @@ export default function CampaignHotels() {
                 viewport={{ once: true }}
                 variants={FADE_UP}
               >
-                <div className="bg-background/5 p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
+                <div className="bg-background/5 p-5 md:p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
                   <div className="flex justify-center mb-6">
-                    <img src={logoLight} alt="BH Labs" className="w-56 h-56" loading="lazy" width={400} height={400} />
+                    <img src={logoLight} alt="BH Labs" className="w-28 h-28 md:w-56 md:h-56" loading="lazy" width={400} height={400} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
                     "Wellness tourists spend 41-175% more than average travelers."
@@ -356,7 +356,7 @@ export default function CampaignHotels() {
         </section>
 
         {/* 7. Final CTA */}
-        <section className="py-24 bg-background">
+        <section className="py-12 md:py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
@@ -365,11 +365,11 @@ export default function CampaignHotels() {
               variants={FADE_UP}
               className="text-center max-w-3xl mx-auto"
             >
-              <img src={logoDark} alt="BH Labs" className="w-32 h-32 mx-auto mb-6" />
+              <img src={logoDark} alt="BH Labs" className="w-20 h-20 md:w-32 md:h-32 mx-auto mb-4 md:mb-6" />
               <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">
                 Every Month Without a Recovery Pod Is Revenue Left on the Table
               </h2>
-              <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-10 max-w-2xl mx-auto">
                 Join the hospitality leaders already generating $25K+ monthly from their BH Labs Recovery Pod. Your guests are looking for wellness — give it to them.
               </p>
               <Button size="lg" className="h-14 px-8 text-base" asChild>

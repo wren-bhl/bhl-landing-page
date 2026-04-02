@@ -15,7 +15,7 @@ export function FAQSection({ items }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-background" id="faq">
+    <section className="py-12 md:py-24 bg-background" id="faq">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

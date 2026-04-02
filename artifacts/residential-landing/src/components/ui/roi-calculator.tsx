@@ -24,7 +24,7 @@ export function ROICalculator() {
   const formatMonths = (n: number) => n < 1 ? "Under 1 Month" : n < 2 ? "Under 2 Months" : Math.ceil(n) + " Months";
 
   return (
-    <section className="py-24 bg-card" id="calculator">
+    <section className="py-12 md:py-24 bg-card" id="calculator">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -105,7 +105,7 @@ export function ROICalculator() {
                       <TrendingUp className="w-6 h-6 mt-0.5 text-emerald-300" />
                       <div>
                         <div className="text-sm text-emerald-200 font-medium">New Monthly Revenue Generated</div>
-                        <div className="text-4xl font-serif font-bold text-white">+{formatCurrency(results.totalMonthly)}<span className="text-lg font-sans text-emerald-200">/mo</span></div>
+                        <div className="text-2xl md:text-4xl font-serif font-bold text-white">+{formatCurrency(results.totalMonthly)}<span className="text-base md:text-lg font-sans text-emerald-200">/mo</span></div>
                       </div>
                     </div>
                   </div>

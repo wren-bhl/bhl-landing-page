@@ -18,7 +18,7 @@ export function ROICalculator() {
   const costPerAthlete = Math.round(podCost / athletes);
 
   return (
-    <section className="py-24 bg-card" id="roi">
+    <section className="py-12 md:py-24 bg-card" id="roi">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <motion.div
           initial="hidden"

@@ -41,7 +41,7 @@ export default function Residential() {
       <Header />
 
       <main className="flex-grow pt-20">
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImage} 
@@ -53,30 +53,30 @@ export default function Residential() {
             <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
             <motion.div 
               initial="hidden"
               animate="visible"
               variants={STAGGER}
               className="max-w-3xl"
             >
-              <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" width={400} height={400} />
+              <motion.div variants={FADE_UP} className="mb-4 md:mb-6">
+                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 md:w-48 md:h-48 mb-2 md:mb-4" width={400} height={400} />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Building className="w-4 h-4" />
                 <span>For Luxury Residential & HOAs</span>
               </motion.div>
               
-              <motion.h1 variants={FADE_UP} className="text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight text-foreground mb-6 leading-[1.1]">
+              <motion.h1 variants={FADE_UP} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1]">
                 The Amenity That <span className="text-primary italic">Pays for Itself</span>
               </motion.h1>
               
-              <motion.p variants={FADE_UP} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed text-left">
+              <motion.p variants={FADE_UP} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-10 max-w-2xl leading-relaxed text-left">
                 Elevate your property value with a turnkey BH Labs Recovery Pod. World-class biohacking equipment that drives resident satisfaction and net-positive HOA revenue. No additional staff required.
               </motion.p>
               
-              <motion.div variants={FADE_UP} className="flex items-center gap-4">
+              <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                 <Button size="lg" className="h-14 px-8 text-base" asChild>
                   <a href="#contact">
                     Request a Meeting
@@ -97,7 +97,7 @@ export default function Residential() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
           >
             <span className="text-sm font-semibold uppercase tracking-widest">Scroll Down</span>
             <motion.div
@@ -119,16 +119,16 @@ export default function Residential() {
           </div>
         </section>
 
-        <section className="py-24 bg-background" id="value">
+        <section className="py-12 md:py-24 bg-background" id="value">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <motion.div 
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={STAGGER}
               >
-                <motion.h2 variants={FADE_UP} className="text-3xl md:text-5xl font-serif text-foreground mb-6">
+                <motion.h2 variants={FADE_UP} className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-6">
                   How does a Recovery Pod increase property value?
                 </motion.h2>
                 <motion.p variants={FADE_UP} className="text-lg text-muted-foreground mb-8 leading-relaxed text-left">
@@ -199,16 +199,16 @@ export default function Residential() {
           </div>
         </section>
 
-        <section className="py-24 bg-background" id="equipment">
+        <section className="py-12 md:py-24 bg-background" id="equipment">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">What equipment is included in a Recovery Pod?</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4 md:mb-6">What equipment is included in a Recovery Pod?</h2>
               <p className="text-lg text-muted-foreground">Seven clinical-grade modalities packaged perfectly for residential amenities. Installed and supported by experts.</p>
             </motion.div>
 
@@ -230,8 +230,8 @@ export default function Residential() {
                   transition={{ delay: i * 0.1, duration: 0.5 }}
                   className="group rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center" style={{ maxHeight: '400px' }}>
-                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod equipment for luxury residential`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" style={{ maxHeight: '400px' }} loading="lazy" />
+                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center max-h-[250px] md:max-h-[400px]">
+                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod equipment for luxury residential`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 max-h-[250px] md:max-h-[400px]" loading="lazy" />
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-medium text-foreground mb-1">{item.name}</h3>
@@ -243,16 +243,16 @@ export default function Residential() {
           </div>
         </section>
 
-        <section className="py-24 bg-background">
+        <section className="py-12 md:py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-6">How does a Recovery Pod get installed?</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4 md:mb-6">How does a Recovery Pod get installed?</h2>
               <p className="text-lg text-muted-foreground">From concept to completion, BH Labs handles every step. Your property is fully operational in weeks — not months.</p>
             </motion.div>
 
@@ -285,9 +285,9 @@ export default function Residential() {
           </div>
         </section>
 
-        <section className="py-24 bg-primary text-primary-foreground">
+        <section className="py-12 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
               <motion.div 
                 initial="hidden"
                 whileInView="visible"
@@ -376,7 +376,7 @@ export default function Residential() {
           { question: "How is the Recovery Pod maintained?", answer: "BH Labs provides a comprehensive 1-year warranty and ongoing technical support from our Miami-based team. The pod is designed for minimal maintenance with rapid response service." }
         ]} />
 
-        <section className="py-24 bg-card relative overflow-hidden" id="contact">
+        <section className="py-12 md:py-24 bg-card relative overflow-hidden" id="contact">
           <div className="absolute bottom-0 left-0 w-1/2 h-full bg-secondary/20 rounded-tr-full blur-3xl -z-10" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">

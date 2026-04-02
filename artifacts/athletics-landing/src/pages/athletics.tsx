@@ -41,7 +41,7 @@ export default function Athletics() {
       <Header />
 
       <main className="flex-grow pt-20">
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <img
               src={heroImage}
@@ -53,27 +53,27 @@ export default function Athletics() {
             <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
             <motion.div
               initial="hidden"
               animate="visible"
               variants={STAGGER}
               className="max-w-3xl"
             >
-              <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" width={400} height={400} />
+              <motion.div variants={FADE_UP} className="mb-4 md:mb-6">
+                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 md:w-48 md:h-48 mb-2 md:mb-4" width={400} height={400} />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <GraduationCap className="w-4 h-4" />
                 <span>For University Athletics</span>
               </motion.div>
 
-              <motion.h1 variants={FADE_UP} className="text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight text-foreground mb-6 leading-[1.1]">
+              <motion.h1 variants={FADE_UP} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1]">
                 Give Every Athlete <span className="text-primary italic">Pro-Level Recovery</span>
               </motion.h1>
 
-              <motion.p variants={FADE_UP} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-                Install a turnkey BH Labs Recovery Pod in your athletic facility. <span className="text-primary font-bold text-2xl md:text-3xl">7 clinical-grade modalities</span> that reduce injury downtime, accelerate return-to-play, and cost less than outsourcing recovery. No additional staff required.
+              <motion.p variants={FADE_UP} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-10 max-w-2xl leading-relaxed">
+                Install a turnkey BH Labs Recovery Pod in your athletic facility. <span className="text-primary font-bold text-xl md:text-2xl lg:text-3xl">7 clinical-grade modalities</span> that reduce injury downtime, accelerate return-to-play, and cost less than outsourcing recovery. No additional staff required.
               </motion.p>
 
               <motion.div variants={FADE_UP} className="flex flex-col sm:flex-row gap-4">
@@ -97,7 +97,7 @@ export default function Athletics() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
           >
             <span className="text-sm font-semibold uppercase tracking-widest">Scroll Down</span>
             <motion.div
@@ -119,16 +119,16 @@ export default function Athletics() {
 
         <ROICalculator />
 
-        <section className="py-24 bg-background" id="value">
+        <section className="py-12 md:py-24 bg-background" id="value">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={FADE_UP}
-                  className="mb-12"
+                  className="mb-8 md:mb-12"
                 >
                   <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Why are athletic departments investing in on-site recovery?</h2>
                   <p className="text-muted-foreground text-lg">University athletics programs spend thousands annually on outsourced recovery services. A single Recovery Pod replaces fragmented solutions with one integrated system that serves every sport year-round.</p>
@@ -198,7 +198,7 @@ export default function Athletics() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent rounded-2xl flex items-end p-8">
                   <div className="text-primary-foreground">
                     <div className="text-sm font-medium uppercase tracking-wider mb-2 opacity-80">One-Time Investment</div>
-                    <div className="text-5xl font-sans font-bold tracking-tighter text-secondary">~$45K</div>
+                    <div className="text-3xl md:text-5xl font-sans font-bold tracking-tighter text-secondary">~$45K</div>
                     <div className="text-sm mt-2 opacity-80">vs. $100K+/year in outsourced recovery</div>
                   </div>
                 </div>
@@ -235,16 +235,16 @@ export default function Athletics() {
           </div>
         </section>
 
-        <section className="py-24 bg-background" id="equipment">
+        <section className="py-12 md:py-24 bg-background" id="equipment">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">What equipment is included in a Recovery Pod?</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4">What equipment is included in a Recovery Pod?</h2>
               <p className="text-lg text-muted-foreground">Seven clinical-grade modalities used by professional athletes. Now accessible for every college program.</p>
             </motion.div>
 
@@ -266,8 +266,8 @@ export default function Athletics() {
                   transition={{ delay: i * 0.1, duration: 0.5 }}
                   className="group rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center" style={{ maxHeight: '400px' }}>
-                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod for university athletics`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" style={{ maxHeight: '400px' }} loading="lazy" />
+                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center max-h-[250px] md:max-h-[400px]">
+                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod for university athletics`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 max-h-[250px] md:max-h-[400px]" loading="lazy" />
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-medium text-foreground mb-1">{item.name}</h3>
@@ -279,14 +279,14 @@ export default function Athletics() {
           </div>
         </section>
 
-        <section className="py-24 bg-card">
+        <section className="py-12 md:py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">How does the turnkey installation work for athletic facilities?</h2>
               <p className="text-muted-foreground text-lg">We handle everything. Your athletic trainers stay focused on athletes.</p>
@@ -325,16 +325,16 @@ export default function Athletics() {
           </div>
         </section>
 
-        <section className="py-24 bg-primary text-primary-foreground">
+        <section className="py-12 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <motion.h2
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   variants={FADE_UP}
-                  className="text-3xl md:text-5xl font-serif mb-6"
+                  className="text-2xl md:text-3xl lg:text-5xl font-serif mb-6"
                 >
                   Who trusts BH Labs with athlete recovery?
                 </motion.h2>
@@ -376,7 +376,7 @@ export default function Athletics() {
               >
                 <div className="bg-background/5 p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
                   <div className="flex justify-center mb-6">
-                    <img src={logoLight} alt="BH Labs" className="w-56 h-56" loading="lazy" width={400} height={400} />
+                    <img src={logoLight} alt="BH Labs" className="w-28 h-28 md:w-56 md:h-56" loading="lazy" width={400} height={400} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
                     "Recovery technology is the new arms race in college athletics recruiting."
@@ -405,7 +405,7 @@ export default function Athletics() {
           { question: "What's the installation timeline?", answer: "From initial consultation to a fully operational pod typically takes 4-6 weeks. Our team handles custom design, installation, and staff training — all turnkey." }
         ]} />
 
-        <section className="py-24 bg-background relative overflow-hidden" id="contact">
+        <section className="py-12 md:py-24 bg-background relative overflow-hidden" id="contact">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/30 rounded-l-full blur-3xl -z-10 transform translate-x-1/2" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">

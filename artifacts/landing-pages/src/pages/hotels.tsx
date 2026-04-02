@@ -42,9 +42,9 @@ export default function Hotels() {
       <SchemaMarkup page="hotels" />
       <Navbar />
 
-      <main className="flex-grow pt-36">
+      <main className="flex-grow pt-20 lg:pt-36">
         {/* Hero Section */}
-        <section className="relative min-h-[90vh] flex items-center">
+        <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center">
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImage} 
@@ -56,27 +56,27 @@ export default function Hotels() {
             <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
             <motion.div 
               initial="hidden"
               animate="visible"
               variants={STAGGER}
               className="max-w-3xl"
             >
-              <motion.div variants={FADE_UP} className="mb-6">
-                <img src={logoDark} alt="BH Labs Logo" className="w-48 h-48 mb-4" width={400} height={400} />
+              <motion.div variants={FADE_UP} className="mb-4 md:mb-6">
+                <img src={logoDark} alt="BH Labs Logo" className="w-24 h-24 md:w-48 md:h-48 mb-2 md:mb-4" width={400} height={400} />
               </motion.div>
               <motion.div variants={FADE_UP} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 text-secondary-foreground text-sm font-medium mb-6">
                 <Hotel className="w-4 h-4" />
                 <span>For Hospitality & Resorts</span>
               </motion.div>
               
-              <motion.h1 variants={FADE_UP} className="text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight text-foreground mb-6 leading-[1.1]">
+              <motion.h1 variants={FADE_UP} className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif tracking-tight text-foreground mb-4 md:mb-6 leading-[1.1]">
                 Turn Idle Space Into <span className="text-primary italic">Wellness Revenue</span>
               </motion.h1>
               
-              <motion.p variants={FADE_UP} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-                Install a turnkey BH Labs Recovery Pod in your hotel. Generate <span className="text-primary font-bold text-2xl md:text-3xl">$25K+ monthly revenue</span> with zero additional staff. Clinical biohacking meets luxury hospitality.
+              <motion.p variants={FADE_UP} className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-10 max-w-2xl leading-relaxed">
+                Install a turnkey BH Labs Recovery Pod in your hotel. Generate <span className="text-primary font-bold text-xl md:text-2xl lg:text-3xl">$25K+ monthly revenue</span> with zero additional staff. Clinical biohacking meets luxury hospitality.
               </motion.p>
               
               <motion.div variants={FADE_UP}>
@@ -95,7 +95,7 @@ export default function Hotels() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
           >
             <span className="text-sm font-semibold uppercase tracking-widest">Scroll Down</span>
             <motion.div
@@ -120,16 +120,16 @@ export default function Hotels() {
         </section>
 
         {/* How Does the Revenue Model Work? */}
-        <section className="py-24 bg-background" id="roi">
+        <section className="py-12 md:py-24 bg-background" id="roi">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <motion.div 
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={FADE_UP}
-                  className="mb-12"
+                  className="mb-8 md:mb-12"
                 >
                   <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">How does the hotel wellness revenue model work?</h2>
                   <p className="text-muted-foreground text-lg">Two revenue streams from a single installation — ADR surcharges plus walk-in sessions. According to the <strong className="text-foreground">Global Wellness Institute (2024)</strong>, wellness tourism will exceed $1 trillion globally, making now the time to capture this market.</p>
@@ -199,7 +199,7 @@ export default function Hotels() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent rounded-2xl flex items-end p-8">
                   <div className="text-primary-foreground">
                     <div className="text-sm font-medium uppercase tracking-wider mb-2 opacity-80">Combined Annual Revenue</div>
-                    <div className="text-5xl font-sans font-bold tracking-tighter text-secondary">+$324,000</div>
+                    <div className="text-3xl md:text-5xl font-sans font-bold tracking-tighter text-secondary">+$324,000</div>
                     <div className="text-sm mt-2 opacity-80">ADR surcharge + a-la-carte sessions</div>
                   </div>
                 </div>
@@ -238,16 +238,16 @@ export default function Hotels() {
         </section>
 
         {/* What equipment is included in a Recovery Pod? */}
-        <section className="py-24 bg-background" id="equipment">
+        <section className="py-12 md:py-24 bg-background" id="equipment">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
-              <h2 className="text-3xl md:text-5xl font-serif text-foreground mb-4">What equipment is included in a Recovery Pod?</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-5xl font-serif text-foreground mb-4">What equipment is included in a Recovery Pod?</h2>
               <p className="text-lg text-muted-foreground">Seven clinical-grade modalities curated for high-end environments. Every piece is BH Labs branded and professionally installed.</p>
             </motion.div>
 
@@ -269,8 +269,8 @@ export default function Hotels() {
                   transition={{ delay: i * 0.1, duration: 0.5 }}
                   className="group rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow"
                 >
-                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center" style={{ maxHeight: '400px' }}>
-                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod equipment for hotel wellness`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" style={{ maxHeight: '400px' }} loading="lazy" />
+                  <div className="overflow-hidden bg-neutral-50 flex items-center justify-center max-h-[250px] md:max-h-[400px]">
+                    <img src={item.image} alt={`${item.name} — BH Labs Recovery Pod equipment for hotel wellness`} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 max-h-[250px] md:max-h-[400px]" loading="lazy" />
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-medium text-foreground mb-1">{item.name}</h3>
@@ -283,14 +283,14 @@ export default function Hotels() {
         </section>
 
         {/* How does the turnkey installation process work? */}
-        <section className="py-24 bg-card">
+        <section className="py-12 md:py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={FADE_UP}
-              className="text-center max-w-3xl mx-auto mb-16"
+              className="text-center max-w-3xl mx-auto mb-8 md:mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">How does the turnkey installation process work?</h2>
               <p className="text-muted-foreground text-lg">We handle the complexity. You collect the revenue.</p>
@@ -330,16 +330,16 @@ export default function Hotels() {
         </section>
 
         {/* Who trusts BH Labs with their wellness integration? */}
-        <section className="py-24 bg-primary text-primary-foreground">
+        <section className="py-12 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <motion.h2 
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   variants={FADE_UP}
-                  className="text-3xl md:text-5xl font-serif mb-6"
+                  className="text-2xl md:text-3xl lg:text-5xl font-serif mb-6"
                 >
                   Who trusts BH Labs with their wellness integration?
                 </motion.h2>
@@ -381,7 +381,7 @@ export default function Hotels() {
               >
                 <div className="bg-background/5 p-8 rounded-2xl border border-primary-foreground/20 backdrop-blur-md">
                   <div className="flex justify-center mb-6">
-                    <img src={logoLight} alt="BH Labs" className="w-56 h-56" loading="lazy" width={400} height={400} />
+                    <img src={logoLight} alt="BH Labs" className="w-28 h-28 md:w-56 md:h-56" loading="lazy" width={400} height={400} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
                     "Wellness tourists spend 41-175% more than average travelers."
@@ -411,7 +411,7 @@ export default function Hotels() {
         ]} />
 
         {/* Contact Section */}
-        <section className="py-24 bg-background relative overflow-hidden" id="contact">
+        <section className="py-12 md:py-24 bg-background relative overflow-hidden" id="contact">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/30 rounded-l-full blur-3xl -z-10 transform translate-x-1/2" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">

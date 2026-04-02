@@ -18,10 +18,10 @@ export function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-36">
+        <div className="flex items-center justify-between h-20 lg:h-36">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3" data-testid="link-logo">
-              <img src={logoDark} alt="BH Labs" className="w-32 h-32" />
+              <img src={logoDark} alt="BH Labs" className="w-14 h-14 lg:w-32 lg:h-32" />
               <span className="font-sans font-semibold text-lg tracking-tight uppercase">BH Labs</span>
             </Link>
           </div>

@@ -25,13 +25,13 @@ function getDescription(page?: PageType): string {
 
 export function Footer({ page }: FooterProps) {
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
+    <footer className="bg-primary text-primary-foreground py-10 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoLight} alt="BH Labs" className="w-40 h-40" />
+              <img src={logoLight} alt="BH Labs" className="w-20 h-20 md:w-40 md:h-40" />
               <span className="font-sans font-semibold text-lg tracking-tight uppercase">BH Labs</span>
             </div>
             <p className="text-primary-foreground/70 text-sm max-w-xs">

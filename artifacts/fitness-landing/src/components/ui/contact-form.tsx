@@ -154,7 +154,7 @@ export function ContactForm({ title, subtitle }: ContactFormProps) {
   }
 
   return (
-    <div className="bg-card rounded-2xl p-8 md:p-10 shadow-xl border border-border" id="contact">
+    <div className="bg-card rounded-2xl p-5 md:p-8 lg:p-10 shadow-xl border border-border" id="contact">
       <div className="mb-8">
         <h3 className="text-2xl md:text-3xl font-serif font-medium mb-2 text-foreground">
           {title || "Get Your Custom Recovery Pod"}
