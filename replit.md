@@ -188,6 +188,29 @@ Standalone landing page for BH Labs Recovery Pod — Luxury Residential vertical
 - Same visual theme and branding as hotel-landing artifact
 - Messaging focus: elevated resident wellness, luxury lifestyle differentiation, property value increase, wellness-forward positioning
 
+### `artifacts/athletics-landing` (`@workspace/athletics-landing`)
+
+Standalone landing page for BH Labs Recovery Pod — University Athletics vertical. Designed as a single-page ad campaign destination with no navigation to other verticals.
+
+- Single-page app (no router), renders athletics page directly
+- Minimal sticky header: BH Labs logo + green "ROI Calculator" button + "Request a Meeting" button
+- No navbar links, no footer — fully standalone for paid ad traffic
+- All CTAs read "Request a Meeting"
+- Content sections: Hero → Summary bar → ROI Calculator → Value proposition (4 stat cards) → Loss aversion → Equipment grid (7 modalities) → Turnkey installation (4 steps) → Social proof → FAQ → Contact form
+- Athletics-specific contact form with:
+  - Role dropdown (Athletic Director, Head Athletic Trainer, Director of Sports Medicine, etc.)
+  - University Name input
+  - Number of Sports Programs and Total Athletes
+  - Current Recovery Methods multi-select checkboxes
+  - Available Space number-only input
+  - Primary Goal dropdown
+  - Target Timeline dropdown
+  - UTM parameter capture
+- ROI Calculator: sliders for number of athletes, current annual recovery spend; shows first-year net savings, cost reduction %, payback period, cost per athlete
+- SEO: JSON-LD (Organization, Product, FAQPage, WebPage), OG/Twitter meta, canonical URL
+- Same visual theme and branding as hotel-landing and fitness-landing artifacts
+- Messaging focus: athlete recovery and performance, return-to-play acceleration, recruiting advantage, cost savings vs outsourcing, operational simplicity
+
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
