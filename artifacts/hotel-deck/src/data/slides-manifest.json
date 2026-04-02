@@ -48,16 +48,56 @@
     "speakerNotes": ""
   },
   {
-    "id": "a1b2c3d4-7777-4000-8000-000000000007",
+    "id": "a1b2c3d4-aa01-4000-8000-000000000010",
     "position": 7,
-    "filepath": "src/pages/slides/ROISlide.tsx",
-    "title": "ROI Projections",
-    "description": "Static financial tables with Conservative, Moderate, Demonstrated scenarios",
+    "filepath": "src/pages/slides/SocialProofSlide.tsx",
+    "title": "Proof of Concept",
+    "description": "Equinox Coral Gables case study with 4 key metrics and monetization reframe",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-aa02-4000-8000-000000000011",
+    "position": 8,
+    "filepath": "src/pages/slides/RevenuePerSqftSlide.tsx",
+    "title": "Revenue Per Square Foot",
+    "description": "Horizontal bar chart comparing hotel space types by revenue per sqft",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-aa03-4000-8000-000000000012",
+    "position": 9,
+    "filepath": "src/pages/slides/ScienceSlide.tsx",
+    "title": "Why Sequence Matters",
+    "description": "6-step protocol sequence with evidence citations per modality",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-aa04-4000-8000-000000000013",
+    "position": 10,
+    "filepath": "src/pages/slides/ROICalculatorSlide.tsx",
+    "title": "ROI Calculator",
+    "description": "Interactive ROI calculator with sliders for properties, sessions, price, and tier",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-aa05-4000-8000-000000000014",
+    "position": 11,
+    "filepath": "src/pages/slides/DeploymentSlide.tsx",
+    "title": "Deployment Model",
+    "description": "Split layout showing BH Labs deliverables vs hotel requirements plus timeline",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-aa06-4000-8000-000000000015",
+    "position": 12,
+    "filepath": "src/pages/slides/RegulatorySlide.tsx",
+    "title": "Regulatory",
+    "description": "Addressing the HBOT question and general wellness device classification",
     "speakerNotes": ""
   },
   {
     "id": "a1b2c3d4-8888-4000-8000-000000000008",
-    "position": 8,
+    "position": 13,
     "filepath": "src/pages/slides/CompetitiveSlide.tsx",
     "title": "Competitive Landscape",
     "description": "Comparison table showing BH Labs vs competitors",
@@ -65,7 +105,7 @@
   },
   {
     "id": "a1b2c3d4-9999-4000-8000-000000000009",
-    "position": 9,
+    "position": 14,
     "filepath": "src/pages/slides/ClosingSlide.tsx",
     "title": "Let's Build This Together",
     "description": "Closing slide with CTA and contact information",
