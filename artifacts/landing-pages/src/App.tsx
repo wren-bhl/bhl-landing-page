@@ -7,6 +7,10 @@ import Hotels from "@/pages/hotels";
 import Residential from "@/pages/residential";
 import Fitness from "@/pages/fitness";
 import Athletics from "@/pages/athletics";
+import CampaignHotels from "@/pages/campaign/hotels";
+import CampaignFitness from "@/pages/campaign/fitness";
+import CampaignResidential from "@/pages/campaign/residential";
+import CampaignAthletics from "@/pages/campaign/athletics";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +21,10 @@ function Router() {
       <Route path="/residential" component={Residential} />
       <Route path="/fitness" component={Fitness} />
       <Route path="/athletics" component={Athletics} />
+      <Route path="/campaign/hotels" component={CampaignHotels} />
+      <Route path="/campaign/fitness" component={CampaignFitness} />
+      <Route path="/campaign/residential" component={CampaignResidential} />
+      <Route path="/campaign/athletics" component={CampaignAthletics} />
       <Route component={NotFound} />
     </Switch>
   );

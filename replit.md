@@ -54,9 +54,19 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 
 React + Vite landing pages for BH Labs Recovery Pod — a biohacking/wellness company that installs turnkey recovery pods in commercial and residential spaces.
 
-- Two landing pages with wouter routing:
+- Landing pages with wouter routing:
   - `/` — Hotels & Resorts (targeting hotel operators for wellness revenue)
   - `/residential` — Luxury Residential / HOAs (targeting property managers and HOA boards)
+  - `/fitness` — Fitness & Sports Clubs
+  - `/athletics` — University Athletics
+- Standalone campaign landing pages (no navbar/footer, optimized for paid ad traffic):
+  - `/campaign/hotels` — Hotels & Resorts campaign page
+  - `/campaign/fitness` — Fitness & Sports Clubs campaign page
+  - `/campaign/residential` — Luxury Residential campaign page
+  - `/campaign/athletics` — University Athletics campaign page
+  - Each follows 7-section structure: Hero → Value Proposition → Outcomes/ROI → How It Works → Lead Capture Form → Trust/Credibility → Final CTA
+  - All CTAs read "Request a Meeting"
+  - Self-contained with BH Labs branding inline, no cross-references to other verticals
 - Frontend-only (no backend required)
 - Uses framer-motion for scroll-triggered animations
 - Real equipment photos (7 modalities) with `-auto-orient` processing, `object-contain`, max-height 400px
