@@ -1,0 +1,335 @@
+You are a senior conversion-focused UI engineer and copy strategist.
+
+Goal:
+Turn this page from a general recovery equipment pitch into a premium member retention, ancillary revenue, and facility differentiation page focused on:
+- increasing ancillary revenue
+- improving member retention and perceived value
+- elevating premium positioning
+- making recovery a monetizable service, not just equipment
+- reducing operational complexity
+- building stronger credibility
+
+Important:
+- Keep the overall premium/performance visual style
+- Do not rebuild from scratch unless necessary
+- Improve copy, hierarchy, section order, CTA strategy, proof placement, calculator/business framing, and form UX
+- Preserve responsiveness and performance
+- Keep code clean and production-ready
+- Do not add fake testimonials, fake logos, fake stats, or fake case studies
+- If proof assets are unavailable, create polished placeholder components clearly labeled for future replacement
+- Keep the tone sophisticated, performance-driven, credible, and executive-level
+- Position BH Labs as a business-growth partner, not just an equipment supplier
+
+Primary conversion objective:
+- Book qualified strategy / feasibility calls
+Secondary conversion objective:
+- Drive engagement with the ROI / revenue potential experience and estimate submissions
+
+Core positioning shift:
+This page should feel like a business case for adding a premium recovery offering inside a gym or sports club.
+The message should lead with:
+- new revenue stream
+- member experience differentiation
+- retention/value-add
+- premium upsell potential
+- turnkey implementation
+- ease of rollout
+The equipment should support that story, not lead it.
+
+Make these changes:
+
+1) HERO SECTION
+Replace generic wellness/recovery messaging with a sharper operator-focused promise.
+
+Use a headline in this direction:
+“Turn Recovery Into a New Revenue Stream for Your Gym or Sports Club”
+
+Use a subheadline in this direction:
+“BH Labs designs and installs turnkey Recovery Pods that help fitness facilities increase member value, unlock premium services, and stand out—without adding major operational complexity.”
+
+CTA structure:
+- Primary CTA: “Calculate My Revenue Potential”
+- Secondary CTA: “Book a Strategy Call”
+
+Under the hero CTA area, add 3 trust bullets such as:
+- Turnkey install + staff training
+- Premium member amenity with monetization potential
+- Designed for gyms, sports clubs, and performance facilities
+
+Also add a small disclaimer/supporting note near any financial claims:
+“Illustrative figures vary based on membership base, usage, pricing, and operating model.”
+
+2) STANDARDIZE CTA HIERARCHY
+Reduce CTA confusion across the full page.
+
+Use only:
+- Primary CTA: “Calculate My Revenue Potential”
+- Secondary CTA: “Book a Strategy Call”
+
+Make sure every section follows the same hierarchy.
+After the calculator/results area, add a stronger transition block:
+“Want to see what this could look like in your facility?”
+“Book a 15-minute strategy call to review your space, member fit, and revenue potential.”
+
+3) REFRAME THE PAGE FOR FITNESS OPERATORS
+Shift the page away from “recovery technology” first and toward business outcomes first.
+
+The page should consistently answer:
+- How does this help attract or retain members?
+- How does this create a premium experience?
+- How does this generate incremental revenue?
+- How difficult is it to run?
+- Why should an operator trust BH Labs?
+
+4) IMPROVE SECTION ORDER / STORY FLOW
+Reorder sections into this conversion flow:
+
+1. Hero
+2. Why this matters now
+3. Revenue model / ROI calculator
+4. Proof / credibility
+5. Recovery offering / what members get
+6. What is included
+7. Installation / rollout process
+8. FAQ
+9. Lead form
+
+Move proof earlier.
+Place credibility before deep equipment detail.
+
+5) REFRAME “WHY THIS MATTERS”
+Make this section about operator economics and market positioning, not just wellness trends.
+
+Emphasize themes like:
+- members expect more than traditional equipment
+- premium recovery creates differentiation
+- recovery can support retention and upsell strategy
+- underused floor space can become a revenue-generating zone
+- clubs can expand perceived value without needing a full spa buildout
+
+Keep this section concise, scannable, and executive-facing.
+
+6) ROI / CALCULATOR: MAKE IT FEEL CREDIBLE
+Keep the calculator if one exists, but make it more believable and operator-friendly.
+
+Add:
+- a “How we calculate this” expandable note/accordion
+- helper text under major inputs and outputs
+- a disclaimer under results:
+  “Illustrative estimate only. Actual results depend on membership size, utilization, pricing strategy, staffing model, and local demand.”
+- a lead capture option under the results:
+  “Send me my estimate”
+
+Suggested framing for outputs:
+- estimated monthly recovery revenue
+- estimated annual ancillary revenue
+- potential premium membership / package uplift
+- estimated payback range
+
+Avoid aggressive or weakly supported outputs.
+If there is an unsupported “property value” or overly speculative business metric, remove it.
+
+7) ADD A CREDIBILITY BLOCK MUCH EARLIER
+Right below the calculator or “why now” section, add a proof block with this direction:
+
+Heading:
+“Why operators take this seriously”
+
+Include space for:
+- real install photos
+- client logos
+- mini case study
+- rollout footprint / timeline
+- operator quote
+- utilization or package example
+
+If real proof is unavailable, create polished placeholders labeled clearly, such as:
+- “Logo placeholder”
+- “Install photo placeholder”
+- “Case study placeholder — add facility type, member base, launch timeline, package structure, and monthly revenue”
+
+Also add a small note on modeling assumptions.
+
+8) REFRAME EQUIPMENT INTO EXPERIENCES / OFFERS
+Do not present the equipment section like a catalog.
+
+Instead, group modalities by operator-facing experience categories such as:
+- Performance Recovery
+- Stress & Nervous System Reset
+- Circulation & Regeneration
+
+For each group, explain:
+- what member goal it serves
+- which audience it appeals to
+- how it fits into a monetizable service offering
+- whether it works best for premium tiers, recovery sessions, add-ons, or packages
+
+Keep the actual device details secondary.
+
+9) POSITION THE OFFER AS A PROGRAM, NOT JUST HARDWARE
+Add a section that frames the BH Labs solution as a recovery offering operators can sell and position.
+
+This section should answer:
+- what the member experience looks like
+- how the facility can package it
+- whether it fits premium memberships, drop-in recovery sessions, athlete programs, or add-on services
+- how it enhances brand perception
+
+Suggested heading:
+“Build a premium recovery offering your members can feel and your business can monetize”
+
+10) WHAT’S INCLUDED SECTION
+Create or improve a section that makes the offer feel turnkey.
+
+Include:
+- layout/design guidance
+- equipment selection
+- installation
+- staff training
+- launch guidance
+- operating recommendations
+
+Make it clear BH Labs is not just shipping equipment.
+
+11) INSTALLATION / OPERATIONS SECTION
+Reduce operational fear directly.
+
+Make this section explicitly communicate:
+- no need to build a full wellness department
+- BH Labs handles design, equipment, install, and training
+- existing staff can usually support the experience
+- rollout can be designed around current operations
+- minimal disruption during setup
+
+Use a clean step-by-step layout with reassuring subcopy.
+
+12) REFRAME ANY “COST OF NOT DOING THIS” SECTION
+If a loss/opportunity-cost section exists, soften it.
+
+Rename it to something like:
+“What is the opportunity cost of leaving this space or member demand under-monetized?”
+
+Use polished business framing, not aggressive fear language.
+Focus on:
+- missed ancillary revenue
+- lower premium differentiation
+- untapped member value
+- underused floor space
+
+Avoid alarmist styling.
+
+13) SOCIAL PROOF SHOULD FEEL INSTITUTIONAL
+Upgrade any thin trust section.
+
+Add placeholders/components for:
+- logos
+- facility names
+- install images
+- operator quote
+- launch timeline
+- footprint used
+- service/package example
+
+Do not invent details.
+If assets are missing, build a polished framework that makes it easy to swap in real proof later.
+
+14) FAQ SHOULD ANSWER REAL BUYER OBJECTIONS
+Rewrite FAQ around operator concerns, such as:
+- What type of gym or sports club is the best fit?
+- How much space is needed?
+- How much staff involvement is required?
+- How do facilities usually monetize recovery pods?
+- Is this better as a premium amenity or paid add-on?
+- How long does installation take?
+- Do you help with pricing and package strategy?
+- What happens after installation?
+- Can this work in an existing training floor footprint?
+
+Make answers practical and commercially relevant.
+
+15) FORM: IMPROVE LEAD QUALIFICATION
+Upgrade the lead form so it better separates serious operators from casual interest.
+
+Recommended fields:
+- Role: Owner / Operator / GM / Performance Director / Recommender / Researcher
+- Facility type: Premium gym / Boutique fitness / Sports performance facility / Athletic club / Recovery studio / Multi-location brand
+- Number of locations
+- Approximate membership size
+- Primary goal: New revenue / Premium differentiation / Retention / Athlete offering / Underused space monetization
+- Existing recovery or wellness offering? Yes/No
+- Estimated available footprint
+- Stage: Exploring / Budgeting / Approved / Ready this quarter
+- Launch timeline
+- Would you like a custom ROI estimate? Yes/No
+
+Most important qualifier:
+- “When are you looking to implement this?”
+
+16) REDUCE FORM FRICTION
+Turn the form into a 2-step experience.
+
+Step 1:
+- contact info
+- facility basics
+
+Step 2:
+- qualification fields
+
+Also add:
+- progress indicator
+- clean validation
+- calculator values prefilled into the form if available
+- mobile-friendly layout
+- accessible labels and input states
+
+17) DESIGN / UX DIRECTION
+Maintain a premium fitness/performance aesthetic:
+- clean, dark, high-contrast or luxe editorial feel if already present
+- generous spacing
+- stronger visual hierarchy
+- proof visible early
+- subtle motion only
+- no clutter
+- no “bro science” tone
+- no overhyped supplement-style language
+
+18) COPY STYLE
+Use copy that feels:
+- premium
+- performance-oriented
+- commercially credible
+- concise
+- benefit-led
+- operator-aware
+
+Avoid:
+- product catalog language
+- modality-first jargon
+- overpromising
+- weakly supported financial hype
+
+19) IMPLEMENTATION NOTES
+Please:
+- inspect the existing page structure and edit current components where possible
+- refactor repeated CTA labels into reusable constants/components if appropriate
+- keep state handling stable for forms/calculator
+- preserve responsiveness
+- keep the page deployable
+- add comments only where useful
+
+20) DELIVERABLES
+Provide:
+1. Updated page implementation
+2. Any new reusable components
+3. Short summary of what changed
+4. List of placeholders that still need real business assets/data
+5. Any claims that should be legally/commercially verified before publishing
+
+Success criteria:
+- The page reads like a premium growth solution for fitness operators
+- Trust appears earlier
+- CTA hierarchy is clear
+- The offer feels monetizable, not just experiential
+- Calculator feels more believable
+- The form qualifies leads better
+- The page feels more specific, credible, and conversion-oriented

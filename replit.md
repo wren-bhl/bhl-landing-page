@@ -150,19 +150,23 @@ Slide deck artifact for BH Labs Recovery Pod generic hotel pitch. 9 slides cover
 
 ### `artifacts/fitness-landing` (`@workspace/fitness-landing`)
 
-Standalone landing page for BH Labs Recovery Pod — Fitness and Sports Club vertical. Designed as a single-page ad campaign destination with no navigation to other verticals.
+Standalone conversion-focused landing page for BH Labs Recovery Pod — Fitness and Sports Club vertical. Designed as a single-page ad campaign destination with no navigation to other verticals.
 
 - Single-page app (no router), renders fitness page directly
-- Minimal sticky header: BH Labs logo + green "View Equipment" button + "Request a Meeting" button
+- Minimal sticky header: BH Labs logo + green "Calculate My Revenue" button + "Book a Strategy Call" button
 - No navbar links, no footer — fully standalone for paid ad traffic
-- All CTAs read "Request a Meeting"
-- Content sections: Hero → Summary bar → Value proposition (4 stat cards) → Loss aversion → Equipment grid (7 modalities) → Turnkey installation → Social proof → FAQ → Contact form
-- Fitness-specific contact form with:
-  - Role dropdown (Owner, General Manager, etc.)
-  - Facility Type dropdown (Gym, Padel Club, CrossFit, etc.)
-  - Current Recovery Amenities multi-select checkboxes
-  - Available Space number-only input
-  - UTM parameter capture
+- CTA hierarchy: "Calculate My Revenue Potential" (primary) / "Book a Strategy Call" (secondary)
+- Section order: Hero → Why This Matters Now → ROI Calculator → Proof/Credibility → Premium Recovery Offering → Equipment (by member outcome) → Turnkey Installation → Opportunity Cost → FAQ → Lead Form
+- ROI Calculator: fitness-specific inputs (totalMembers, premiumUptake %, premiumPrice, dropInSessions, dropInPrice, operatingCost), methodology accordion, illustrative disclaimer
+- Equipment grouped by member outcome: Performance Recovery, Stress & Nervous System Reset, Circulation & Regeneration
+- Premium Recovery Offering section: 4 monetization models (premium tier, drop-in, athlete programs, brand positioning)
+- Opportunity cost section: elegant stone-colored (not red fear-based)
+- FAQ: 9 questions focused on buyer objections
+- 2-step contact form with progress indicator:
+  - Step 1: contact info + facility basics (required)
+  - Step 2: qualification (facility type, existing recovery, primary goal, buyer stage, available space, timeline, custom ROI estimate)
+  - Back button on step 2, thank-you overlay on submit
+- UTM parameter capture (sessionStorage → form payload)
 - SEO: JSON-LD (Organization, Product, FAQPage, WebPage), OG/Twitter meta, canonical URL
 - Same visual theme and branding as hotel-landing artifact
 

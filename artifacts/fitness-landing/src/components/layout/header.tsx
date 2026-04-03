@@ -15,17 +15,17 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <a
-              href="#equipment"
+              href="#calculator"
               className="hidden sm:inline-flex h-12 items-center justify-center rounded-full bg-emerald-600 px-6 text-sm font-bold text-white transition-all hover:bg-emerald-700 shadow-lg shadow-emerald-600/30 ring-2 ring-emerald-400/30 hover:ring-emerald-400/50 hover:shadow-xl hover:shadow-emerald-600/40 hover:scale-105"
             >
               <Calculator className="w-4 h-4 mr-2" />
-              View Equipment
+              Calculate My Revenue
             </a>
             <a
               href="#contact"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             >
-              Request a Meeting
+              Book a Strategy Call
             </a>
           </div>
         </div>

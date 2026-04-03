@@ -9,7 +9,7 @@ export function SchemaMarkup() {
     const existingCanonical = document.querySelector('link[data-dynamic]');
     existingCanonical?.remove();
 
-    const dateModified = "2026-04-02";
+    const dateModified = "2026-04-03";
 
     const organization = {
       "@context": "https://schema.org",
@@ -45,7 +45,7 @@ export function SchemaMarkup() {
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "BH Labs Recovery Pod for Fitness Clubs",
-      "description": "Turnkey wellness pod for fitness clubs and sports facilities featuring HBOT, red light therapy, infrared sauna, lymphatic drainage, and PEMF devices. Drives 30% better member retention with zero additional staff.",
+      "description": "Turnkey wellness pod for fitness clubs and sports facilities. Launch a premium recovery tier that drives member retention, generates ancillary revenue, and requires zero additional headcount.",
       "brand": { "@type": "Brand", "name": "BH Labs" },
       "offers": {
         "@type": "Offer",
@@ -53,7 +53,7 @@ export function SchemaMarkup() {
         "price": "45000",
         "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
-        "description": "Complete turnkey Recovery Pod installation with 1-year warranty"
+        "description": "Complete turnkey Recovery Pod installation with 1-year warranty and staff training"
       },
       "dateModified": dateModified
     };
@@ -63,12 +63,13 @@ export function SchemaMarkup() {
       "@type": "FAQPage",
       "dateModified": dateModified,
       "mainEntity": [
-        { q: "How does a Recovery Pod help with member retention?", a: "Members who use recovery equipment stay 30% longer on average. A Recovery Pod gives members a reason to upgrade to a premium tier and keeps them coming back — reducing churn and increasing lifetime value." },
-        { q: "What's the ROI for a fitness facility?", a: "A BH Labs Recovery Pod costs approximately $45,000. By launching a premium recovery membership tier ($50-100/month per member), most facilities see full payback within 3-6 months while generating recurring revenue." },
-        { q: "Does our staff need special training?", a: "BH Labs provides comprehensive staff training and certification. Your existing team will be fully equipped to guide members through 30+ recovery protocols." },
-        { q: "How much space does a Recovery Pod require?", a: "Our in-house architect designs the pod layout to fit your available space. Whether you have a spare room or an open area, we'll configure equipment to maximize efficiency." },
-        { q: "What types of fitness facilities use Recovery Pods?", a: "Gyms, CrossFit boxes, padel clubs, boutique fitness studios, martial arts academies, and multi-sport facilities. Any facility looking to differentiate with premium recovery." },
-        { q: "What equipment is included?", a: "Each Recovery Pod includes an HBOT chamber, red light therapy panels, infrared sauna, compression therapy suits, lymphatic drainage, and PEMF devices — seven clinical-grade modalities total." }
+        { q: "What type of gym or sports club is the best fit?", a: "Recovery Pods work well in premium gyms, boutique fitness studios, CrossFit boxes, padel clubs, sports performance facilities, and athletic clubs with 200+ active members." },
+        { q: "How much space is needed?", a: "Most installations require 400-800 square feet. Our in-house architect designs a custom layout for your available space." },
+        { q: "How much staff involvement is required?", a: "Minimal. BH Labs trains and certifies your existing staff to operate every modality. No dedicated recovery specialists needed." },
+        { q: "How do facilities usually monetize Recovery Pods?", a: "Premium membership tier ($50-100/mo), drop-in recovery sessions ($25-50/visit), and performance packages for athletes. Many combine all three." },
+        { q: "How long does installation take?", a: "2-4 weeks from layout approval to operational launch. BH Labs manages the full process to minimize disruption." },
+        { q: "Do you help with pricing and package strategy?", a: "Yes. BH Labs provides guidance on premium tier pricing, drop-in pricing, and member packaging." },
+        { q: "What happens after installation?", a: "Comprehensive 1-year warranty, ongoing technical support, and maintenance." }
       ].map(f => ({
         "@type": "Question",
         "name": f.q,
@@ -81,7 +82,7 @@ export function SchemaMarkup() {
     const webPage = {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "BH Labs Recovery Pods for Fitness & Sports Clubs",
+      "name": "Fitness Club Recovery Revenue Solution | BH Labs Recovery Pods",
       "url": pageUrl,
       "dateModified": dateModified,
       "publisher": {
@@ -112,10 +113,10 @@ export function SchemaMarkup() {
       document.head.appendChild(meta);
     };
 
-    document.title = "Recovery Pods for Fitness & Sports Clubs | BH Labs — Premium Member Recovery";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "Install a turnkey BH Labs Recovery Pod in your fitness club. Launch a premium recovery tier that drives member retention by 30%, generates recurring revenue, and requires zero additional staff.");
-    setMeta("property", "og:title", "Recovery Pods for Fitness & Sports Clubs | BH Labs");
-    setMeta("property", "og:description", "Add a turnkey Recovery Pod to your facility. Launch a premium recovery tier that drives retention, attracts new members, and generates recurring revenue.");
+    document.title = "Fitness Club Recovery Revenue Solution | BH Labs Recovery Pods";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Turn recovery into a new revenue stream for your gym or sports club. BH Labs installs turnkey Recovery Pods — launch a premium recovery tier, drive retention, and generate ancillary revenue with zero additional headcount.");
+    setMeta("property", "og:title", "Fitness Club Recovery Revenue Solution | BH Labs Recovery Pods");
+    setMeta("property", "og:description", "Turn recovery into a new revenue stream. Turnkey Recovery Pod installation for gyms and sports clubs with zero additional headcount.");
     setMeta("property", "og:url", pageUrl);
     setMeta("property", "og:image", "https://www.bh-labs.com/opengraph.jpg");
     setMeta("property", "og:image:width", "1200");

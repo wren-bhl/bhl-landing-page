@@ -24,8 +24,8 @@ export function FAQSection({ items }: FAQSectionProps) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">What do property owners ask about Recovery Pods?</h2>
-          <p className="text-muted-foreground text-lg">Everything you need to know about BH Labs Recovery Pods.</p>
+          <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Questions facility operators ask before moving forward</h2>
+          <p className="text-muted-foreground text-lg">Practical answers to help you evaluate fit and feasibility for your gym or club.</p>
         </motion.div>
 
         <div className="space-y-3">
