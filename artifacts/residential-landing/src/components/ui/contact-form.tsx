@@ -2,12 +2,11 @@ import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 
 const req = (msg: string) => z.string().min(1, msg);
 
@@ -96,9 +95,7 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ title, subtitle }: ContactFormProps) {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [step, setStep] = useState(1);
 
   useEffect(() => {
@@ -133,44 +130,12 @@ export function ContactForm({ title, subtitle }: ContactFormProps) {
     const payload = { ...data, ...utmParams, pageUrl: window.location.href, formType: "residential" };
     console.log("Form submission payload:", payload);
 
+    const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     setTimeout(() => {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-      toast({
-        title: "Request Submitted Successfully",
-        description: "A BH Labs representative will contact you shortly.",
-      });
+      window.location.href = `${base}/thank-you`;
     }, 1500);
   };
-
-  if (isSubmitted) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="bg-card rounded-2xl p-8 md:p-12 shadow-xl border border-border text-center" id="contact"
-      >
-        <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle2 className="w-10 h-10 text-emerald-600" />
-        </div>
-        <h3 className="text-2xl md:text-3xl font-serif font-medium mb-3 text-foreground">Thank You!</h3>
-        <p className="text-muted-foreground text-lg mb-6 max-w-md mx-auto">
-          Your request has been received. A BH Labs representative will contact you within 24 hours to discuss your property's wellness amenity potential.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button variant="outline" onClick={() => { setIsSubmitted(false); setStep(1); form.reset(); }}>
-            Submit Another Request
-          </Button>
-          <Button asChild>
-            <a href="#calculator">
-              Recalculate ROI
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
-          </Button>
-        </div>
-      </motion.div>
-    );
-  }
 
   return (
     <div className="bg-card rounded-2xl p-5 md:p-8 lg:p-10 shadow-xl border border-border" id="contact">
