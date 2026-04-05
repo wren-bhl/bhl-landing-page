@@ -1,0 +1,86 @@
+Create a dedicated Thank You page for the “Luxury Residential / HOA” Recovery Pod landing page.
+
+Goal:
+This page appears immediately after a user submits the form on the Luxury Residential / HOA landing page. The purpose of the Thank You page is to confirm the submission, reinforce the value proposition, and get the lead to book a call through an embedded HubSpot calendar.
+
+Brand:
+BH Labs / Recovery Pod
+
+Audience:
+Luxury residential developers, HOA board members, condo association decision-makers, property managers, multifamily operators, and amenity-focused real estate executives evaluating premium wellness offerings for residents.
+
+Tone:
+Premium, polished, modern, high-converting, residential luxury-focused, wellness-driven, clean upscale aesthetic.
+
+Key message from original landing page:
+- Turn underutilized amenity or common space into a premium wellness offering
+- Increase property value and resident appeal with luxury recovery experiences
+- Recovery Pod helps residential communities create a differentiated amenity
+- Turnkey implementation with minimal operational burden
+- Elevate the resident experience with a modern wellness destination
+
+Build the page with these sections:
+
+1. Hero Section
+- Large headline: “Thank You — Your Revenue Projection Request Has Been Received”
+- Subheadline: “You’re one step closer to transforming unused amenity space into a premium wellness experience for residents.”
+- Short confirmation text that BH Labs received their information and the next best step is to schedule a strategy call.
+
+2. Booking Section
+- Add a strong section headline like: “Book Your Strategy Call”
+- Add short copy explaining that on the call, BH Labs will review their property, resident amenity goals, space requirements, implementation options, and rollout strategy.
+- Insert a clear placeholder for the HubSpot meeting embed:
+<!-- Start of Meetings Embed Script -->
+    <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/stephan-coles/ic-rr?embed=true"></div>
+    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+  <!-- End of Meetings Embed Script -->
+
+3. Value Reinforcement Section
+Use 3 to 4 visually clean cards with these benefit themes:
+- Upgrade underused amenity space
+- Premium resident wellness experience
+- Increased property differentiation and appeal
+- Turnkey implementation with training and support
+
+4. What Happens On The Call
+Include a short bullet section:
+- Review your residential property layout
+- Evaluate amenity and wellness opportunity
+- Discuss equipment configuration
+- Outline implementation timeline and next steps
+
+5. Trust / Credibility Section
+Include a short paragraph referencing BH Labs’ experience:
+- 5 successful wellness locations across Miami
+- experience in high-volume commercial operations
+- partnerships with EQUINOX and Reserve Padel Solemia
+- equipment installed in medical facilities including Dr. Johnny Salomon in Miami
+
+6. Final CTA Section
+- Headline: “Secure Your Booking Time”
+- Short text encouraging them to choose a time now while interest is high
+- Secondary button anchor link that scrolls back to the embedded calendar:
+  Button text: “Book My Call”
+
+Design and UX requirements:
+- Mobile responsive
+- Visually consistent with a premium residential wellness brand
+- Strong spacing, clear hierarchy, modern typography
+- Use subtle wellness/luxury styling with an upscale residential feel
+- Keep it conversion-focused, not cluttered
+
+Technical requirements:
+- Build as a standalone thank-you page in Replit
+- Include smooth scrolling for the “Book My Call” button
+- Calendar section should be prominent above the fold or very near it
+- Add a fallback text link area under the embed placeholder:
+  “Having trouble viewing the calendar? Contact us at info@thebiohacklab.com”
+
+Also include:
+- SEO title: “Thank You | Luxury Residential / HOA Recovery Pod | BH Labs”
+- Meta description: “Thank you for requesting your Recovery Pod revenue projection. Book your strategy call with BH Labs.”
+- Clean semantic HTML structure
+- Modern CSS styling
+- If using React, keep component structure clean and production-ready
+
+Do not create a generic thank you page. Make it specifically aligned to luxury residential communities, HOA decision-makers, condo associations, and multifamily operators evaluating premium wellness amenities.
