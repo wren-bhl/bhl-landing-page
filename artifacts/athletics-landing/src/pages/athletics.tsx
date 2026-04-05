@@ -232,16 +232,19 @@ export default function Athletics() {
                   className="space-y-4 mb-8"
                 >
                   {[
-                    { name: "Equinox Partnership Integrations", detail: "Premium fitness" },
-                    { name: "Reserve Padel Solemia", detail: "Sports & recreation" },
-                    { name: "Dr. Johnny Salomon's Medical Facility", detail: "Medical wellness" }
+                    { name: "Equinox at Merrick Park", detail: "Premium fitness", sub: "Recovery Pod operational inside Equinox Merrick Park. Runs on existing Equinox staff." },
+                    { name: "Reserve Padel Sole Mia", detail: "Sports & recreation", sub: "Installed at South Florida's #1 padel facility. Post-match recovery drives repeat visits." },
+                    { name: "Dr. Johnny Salomon's Medical Facility", detail: "Medical wellness", sub: "Integrated into Dr. Salomon's plastic surgery practice for post-procedure recovery protocols." }
                   ].map((partner, i) => (
-                    <motion.div key={i} variants={FADE_UP} className="flex items-center gap-3 bg-primary-foreground/10 px-4 py-3 rounded-lg backdrop-blur-sm">
-                      <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
-                      <div>
-                        <span className="font-medium text-primary-foreground">{partner.name}</span>
-                        <span className="text-primary-foreground/60 text-sm ml-2">— {partner.detail}</span>
+                    <motion.div key={i} variants={FADE_UP} className="bg-primary-foreground/10 px-4 py-3 rounded-lg backdrop-blur-sm">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
+                        <div>
+                          <span className="font-medium text-primary-foreground">{partner.name}</span>
+                          <span className="text-primary-foreground/60 text-sm ml-2">— {partner.detail}</span>
+                        </div>
                       </div>
+                      <p className="text-xs text-primary-foreground/50 mt-1 ml-8">{partner.sub}</p>
                     </motion.div>
                   ))}
                 </motion.div>
@@ -255,10 +258,11 @@ export default function Athletics() {
                 >
                   <div className="flex items-center gap-2 mb-3">
                     <Camera className="w-4 h-4 text-secondary" />
-                    <span className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Athletics Case Study</span>
+                    <span className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Partnership Spotlight</span>
                   </div>
-                  <p className="text-sm text-primary-foreground/60 italic leading-relaxed">
-                    Case study placeholder — add facility type, athlete count, sports served, prior recovery setup, pod footprint, projected savings, and quote from ATC / performance director / athletic director when available.
+                  <h4 className="text-base font-medium text-primary-foreground mb-2">Reserve Padel at Sole Mia + Equinox Coral Gables</h4>
+                  <p className="text-sm text-primary-foreground/60 leading-relaxed">
+                    BH Labs operates recovery installations inside two elite sports and fitness environments in South Florida. Athletes and members use HBOT, compression, red light, and PEMF for post-training recovery — all managed by existing facility staff with BH Labs' protocols and ongoing support.
                   </p>
                 </motion.div>
               </div>
@@ -274,7 +278,7 @@ export default function Athletics() {
                     <img src={logoLight} alt="BH Labs" className="w-28 h-28 md:w-56 md:h-56" loading="lazy" width={400} height={400} />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif mb-6 text-primary-foreground leading-snug">
-                    "Recovery infrastructure is becoming a core part of how athletics departments compete — for athletes, for results, and for recruits."
+                    "Properties with dedicated wellness offerings report higher satisfaction scores and competitive positioning."
                   </h3>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
@@ -282,7 +286,7 @@ export default function Athletics() {
                     </div>
                     <div>
                       <div className="font-medium">Industry Insight</div>
-                      <div className="text-primary-foreground/60 text-sm">NCAA Athletics Operations Trend</div>
+                      <div className="text-primary-foreground/60 text-sm">Global Wellness Institute</div>
                     </div>
                   </div>
                 </div>
@@ -528,9 +532,40 @@ export default function Athletics() {
                 title="Request a Custom Proposal"
                 subtitle="Tell us about your athletics program and we'll prepare a tailored recovery solution and savings analysis."
               />
+              <p className="text-sm text-muted-foreground text-center mt-6">
+                Prefer to call? Reach us directly at{" "}
+                <a href="tel:+19548705814" className="text-primary font-medium hover:underline">(954) 870-5814</a>
+                {" "}or email{" "}
+                <a href="mailto:info@thebiohacklab.com" className="text-primary font-medium hover:underline">info@thebiohacklab.com</a>
+              </p>
             </div>
           </div>
         </section>
+
+        {/* FOOTER */}
+        <footer className="py-10 bg-primary text-primary-foreground border-t border-border">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-3">
+                <img src={logoLight} alt="BH Labs" className="w-10 h-10" />
+                <span className="font-sans font-semibold text-lg tracking-tight uppercase">BH Labs</span>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-primary-foreground/70">
+                <a href="https://thebiohacklab.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">thebiohacklab.com</a>
+                <span className="hidden md:inline">|</span>
+                <a href="https://www.bh-labs.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">bh-labs.com</a>
+                <span className="hidden md:inline">|</span>
+                <a href="mailto:info@thebiohacklab.com" className="hover:text-primary-foreground transition-colors">info@thebiohacklab.com</a>
+                <span className="hidden md:inline">|</span>
+                <a href="tel:+19548705814" className="hover:text-primary-foreground transition-colors">(954) 870-5814</a>
+              </div>
+            </div>
+            <div className="mt-6 pt-6 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/50">
+              <p>&copy; {new Date().getFullYear()} BH Labs. All rights reserved. <a href="#" className="underline underline-offset-2 hover:text-primary-foreground/70">Privacy Policy</a></p>
+              <p className="max-w-xl text-center md:text-right leading-relaxed">All projections are illustrative and based on modeled assumptions. Actual results vary by property, utilization, pricing strategy, and market conditions.</p>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );

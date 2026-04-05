@@ -1,0 +1,53 @@
+Update the Athletics landing page for BH Labs with the following changes:
+
+1. Calculator
+- No calculator default changes were specified for the athletics page, so keep the existing calculator structure unless a separate athletics calculator spec exists elsewhere.
+- Focus this update on proof, trust, quote, contact, SEO, and imagery.
+
+2. Case study / proof section
+- Replace any case study placeholder with this athletics-specific proof point:
+  “Partnership Spotlight: Reserve Padel at Sole Mia + Equinox Coral Gables. BH Labs operates recovery installations inside two elite sports and fitness environments in South Florida. Athletes and members use HBOT, compression, red light, and PEMF for post-training recovery — all managed by existing facility staff with BH Labs’ protocols and ongoing support.”
+
+3. Social proof under logo section
+- Under the Equinox partnership logo, add:
+  “Recovery Pod operational inside Equinox Merrick Park. Runs on existing Equinox staff.”
+- Under Reserve Padel Sole Mia, add:
+  “Installed at South Florida’s #1 padel facility. Post-match recovery drives repeat visits.”
+- Under Dr. Johnny Salomon’s Medical Facility, add:
+  “Integrated into Dr. Salomon’s plastic surgery practice for post-procedure recovery protocols.”
+
+4. Industry quote
+- Add a quote block for the athletics page:
+  “Recovery infrastructure is becoming standard at Division I programs — 87% of Power 5 athletic departments now invest in dedicated recovery facilities.”
+- Verify the source before publishing.
+- If the quote cannot be cleanly sourced, use this fallback:
+  “Properties with dedicated wellness offerings report higher satisfaction scores and competitive positioning.” — Global Wellness Institute
+
+5. Contact form
+- Ensure form submissions send to info@thebiohacklab.com or the connected CRM endpoint
+- Add an auto-reply confirmation email to the submitter
+- If possible, connect the form to Calendly or HubSpot Meetings
+- If scheduling is not yet connected, add this line below the submit button:
+  “Prefer to call? Reach us directly at (954) 870-5814 or email info@thebiohacklab.com”
+
+6. Footer / legal
+Make sure the footer includes:
+- BH Labs logo
+- Link to thebiohacklab.com
+- Link to bh-labs.com
+- info@thebiohacklab.com
+- (954) 870-5814
+- Privacy Policy link
+- Disclaimer:
+  “All projections are illustrative and based on modeled assumptions. Actual results vary by property, utilization, pricing strategy, and market conditions.”
+
+7. SEO
+- Set page title to:
+  “Recovery Pods for Universities & Athletic Programs | BH Labs — Athlete Recovery”
+- Add meta description:
+  “Give your athletes a competitive recovery edge. BH Labs Recovery Pods for university athletic programs — turnkey install, proven protocols.”
+
+8. Images
+- Use strong athletics and recovery imagery
+- Prioritize actual BH Labs modality and installation photos if available
+- Ensure all image src paths are correct and loading

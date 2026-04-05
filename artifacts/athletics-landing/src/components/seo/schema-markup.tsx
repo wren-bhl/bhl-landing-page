@@ -111,8 +111,8 @@ export function SchemaMarkup() {
       document.head.appendChild(meta);
     };
 
-    document.title = "University Athletics Recovery Infrastructure | BH Labs — Cut Recovery Costs, Improve Availability";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "Replace outsourced recovery with a turnkey BH Labs Recovery Pod. 7 clinical-grade modalities serving all sports. Reduce costs, improve athlete availability, and centralize recovery — no additional staff required.");
+    document.title = "Recovery Pods for Universities & Athletic Programs | BH Labs — Athlete Recovery";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Give your athletes a competitive recovery edge. BH Labs Recovery Pods for university athletic programs — turnkey install, proven protocols.");
     setMeta("property", "og:title", "University Athletics Recovery Infrastructure | BH Labs");
     setMeta("property", "og:description", "Cut recovery costs. Improve athlete availability. One turnkey Recovery Pod replaces outsourced services for every sport. No additional staff required.");
     setMeta("property", "og:url", pageUrl);
