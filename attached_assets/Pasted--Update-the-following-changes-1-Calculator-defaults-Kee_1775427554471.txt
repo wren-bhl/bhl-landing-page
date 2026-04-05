@@ -1,0 +1,59 @@
+
+
+Update the following changes:
+
+1. Calculator defaults
+- Keep Total Members at 500
+- Change Premium Tier Uptake from 10% to 12%
+- Change Premium Tier Price from $75/mo to $89/mo
+- Change Drop-In Sessions per Day from 5 to 8
+- Change Average Drop-In Price from $30 to $45
+- Change Monthly Operating Cost from $400 to $800
+
+2. Case study / proof section
+- Replace any case study placeholder with this fitness-specific proof point:
+  “Partnership Spotlight: Reserve Padel at Sole Mia, North Miami. BH Labs installed a Recovery Pod inside Reserve Padel — South Florida’s premier padel facility. The pod serves athletes post-match with compression, cryotherapy, and red light therapy. Operational within 60 days using existing club staff, it has become one of the most-used amenities on the property.”
+
+3. Social proof under logo section
+- Under the Equinox partnership logo, add:
+  “Recovery Pod operational inside Equinox Merrick Park. Runs on existing Equinox staff.”
+- Under Reserve Padel Sole Mia, add:
+  “Installed at South Florida’s #1 padel facility. Post-match recovery drives repeat visits.”
+- Under Dr. Johnny Salomon’s Medical Facility, add:
+  “Integrated into Dr. Salomon’s plastic surgery practice for post-procedure recovery protocols.”
+
+4. Industry quote
+- Add a quote block for the fitness page:
+  “Clubs with recovery amenities report 15–30% higher member retention and increased ancillary revenue per member.”
+- Verify the source before publishing.
+- If the quote cannot be cleanly sourced, use this fallback:
+  “Properties with dedicated wellness offerings report higher satisfaction scores and competitive positioning.” — Global Wellness Institute
+
+5. Contact form
+- Ensure form submissions send to info@thebiohacklab.com or the connected CRM endpoint
+- Add an auto-reply confirmation email to the submitter
+- If possible, connect the form to Calendly or HubSpot Meetings
+- If scheduling is not yet connected, add this line below the submit button:
+  “Prefer to call? Reach us directly at (954) 870-5814 or email info@thebiohacklab.com”
+
+6. Footer / legal
+Make sure the footer includes:
+- BH Labs logo
+- Link to thebiohacklab.com
+- Link to bh-labs.com
+- info@thebiohacklab.com
+- (954) 870-5814
+- Privacy Policy link
+- Disclaimer:
+  “All projections are illustrative and based on modeled assumptions. Actual results vary by property, utilization, pricing strategy, and market conditions.”
+
+7. SEO
+- Set page title to:
+  “Recovery Pods for Gyms & Sports Clubs | BH Labs — Premium Member Amenity”
+- Add meta description:
+  “Add a premium recovery tier that drives retention and revenue. BH Labs Recovery Pods for gyms and sports clubs. Calculate your potential.”
+
+8. Images
+- Use real BH Labs modality photos where possible
+- Include recovery equipment and fitness environment imagery
+- Ensure all image src paths are correct and loading

@@ -113,8 +113,8 @@ export function SchemaMarkup() {
       document.head.appendChild(meta);
     };
 
-    document.title = "Fitness Club Recovery Revenue Solution | BH Labs Recovery Pods";
-    document.querySelector('meta[name="description"]')?.setAttribute("content", "Turn recovery into a new revenue stream for your gym or sports club. BH Labs installs turnkey Recovery Pods — launch a premium recovery tier, drive retention, and generate ancillary revenue with zero additional headcount.");
+    document.title = "Recovery Pods for Gyms & Sports Clubs | BH Labs — Premium Member Amenity";
+    document.querySelector('meta[name="description"]')?.setAttribute("content", "Add a premium recovery tier that drives retention and revenue. BH Labs Recovery Pods for gyms and sports clubs. Calculate your potential.");
     setMeta("property", "og:title", "Fitness Club Recovery Revenue Solution | BH Labs Recovery Pods");
     setMeta("property", "og:description", "Turn recovery into a new revenue stream. Turnkey Recovery Pod installation for gyms and sports clubs with zero additional headcount.");
     setMeta("property", "og:url", pageUrl);

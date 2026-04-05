@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 
 export function ROICalculator() {
   const [totalMembers, setTotalMembers] = useState(500);
-  const [premiumUptake, setPremiumUptake] = useState(10);
-  const [premiumPrice, setPremiumPrice] = useState(75);
-  const [dropInSessions, setDropInSessions] = useState(5);
-  const [dropInPrice, setDropInPrice] = useState(30);
-  const [operatingCost, setOperatingCost] = useState(400);
+  const [premiumUptake, setPremiumUptake] = useState(12);
+  const [premiumPrice, setPremiumPrice] = useState(89);
+  const [dropInSessions, setDropInSessions] = useState(8);
+  const [dropInPrice, setDropInPrice] = useState(45);
+  const [operatingCost, setOperatingCost] = useState(800);
   const [showMethodology, setShowMethodology] = useState(false);
 
   const results = useMemo(() => {
@@ -105,9 +105,9 @@ export function ROICalculator() {
               <div>
                 <div className="flex justify-between text-sm mb-2">
                   <label htmlFor="fit-operating" className="text-muted-foreground">Monthly Operating Cost</label>
-                  <span className="font-semibold text-foreground text-base">${operatingCost}</span>
+                  <span className="font-semibold text-foreground text-base">${operatingCost.toLocaleString()}</span>
                 </div>
-                <input id="fit-operating" type="range" min={0} max={2000} step={50} value={operatingCost} onChange={(e) => setOperatingCost(Number(e.target.value))} className="w-full accent-emerald-600" aria-label={`Monthly Operating Cost: $${operatingCost}`} />
+                <input id="fit-operating" type="range" min={0} max={3000} step={50} value={operatingCost} onChange={(e) => setOperatingCost(Number(e.target.value))} className="w-full accent-emerald-600" aria-label={`Monthly Operating Cost: $${operatingCost}`} />
                 <p className="text-xs text-muted-foreground mt-1">Estimated costs reflect basic staffing and utilization assumptions and may vary</p>
               </div>
             </div>
