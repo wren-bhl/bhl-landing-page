@@ -242,20 +242,54 @@ export function ContactForm({ type, title, subtitle }: ContactFormProps) {
     }
   }, [propertyStateValue, type, form]);
 
-  const onSubmit = (data: Record<string, unknown>) => {
+  const onSubmit = async (data: Record<string, unknown>) => {
     setIsSubmitting(true);
     const utmParams = getUTMParams();
     const payload = { ...data, ...utmParams, pageUrl: window.location.href, formType: type };
-    console.log("Form submission payload:", payload);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Send to serverless function (logs + email notification)
+      await fetch("/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      // Also send to Netlify Forms as backup
+      try {
+        const formData = new URLSearchParams();
+        formData.append("form-name", `bh-labs-${type}`);
+        Object.entries(payload).forEach(([k, v]) => formData.append(k, String(v ?? "")));
+        await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: formData.toString() }).catch(() => {});
+      } catch {}
+
+      // Send to HubSpot CRM (when forms are configured)
+      try {
+        await fetch("https://api.hsforms.com/submissions/v3/integration/submit/48197674/placeholder-form-id", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fields: Object.entries(payload).map(([k, v]) => ({ name: k, value: String(v ?? "") })),
+            context: { pageUri: window.location.href, pageName: document.title },
+          }),
+        }).catch(() => {});
+      } catch {}
+
       setIsSubmitted(true);
       toast({
         title: "Request Submitted Successfully",
         description: "A BH Labs representative will contact you shortly.",
       });
-    }, 1500);
+    } catch (err) {
+      console.error("Form submission error:", err);
+      toast({
+        title: "Submission Error",
+        description: "Please try again or call us at (954) 870-5814.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {

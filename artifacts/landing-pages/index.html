@@ -31,5 +31,31 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Hidden Netlify form definitions for form detection -->
+    <form name="bh-labs-hotel" netlify netlify-honeypot="bot-field" hidden>
+      <input name="firstName"/><input name="lastName"/><input name="email"/><input name="phone"/>
+      <input name="property"/><input name="role"/><input name="propertyState"/><input name="propertyCity"/>
+      <input name="numberOfRooms"/><input name="averageOccupancy"/><input name="existingSpaGym"/>
+      <input name="estimatedPodSpace"/><input name="targetTimeline"/><input name="formType"/>
+      <input name="pageUrl"/><input name="bot-field"/>
+    </form>
+    <form name="bh-labs-fitness" netlify netlify-honeypot="bot-field" hidden>
+      <input name="firstName"/><input name="lastName"/><input name="email"/><input name="phone"/>
+      <input name="property"/><input name="role"/><input name="numberOfMembers"/><input name="numberOfLocations"/>
+      <input name="facilityType"/><input name="currentRecoveryAmenities"/><input name="availableSpace"/>
+      <input name="mainGoal"/><input name="targetTimeline"/><input name="formType"/><input name="pageUrl"/><input name="bot-field"/>
+    </form>
+    <form name="bh-labs-residential" netlify netlify-honeypot="bot-field" hidden>
+      <input name="firstName"/><input name="lastName"/><input name="email"/><input name="phone"/>
+      <input name="property"/><input name="role"/><input name="propertyType"/><input name="numberOfUnits"/>
+      <input name="currentAmenities"/><input name="availableSpace"/><input name="wellnessFees"/>
+      <input name="targetTimeline"/><input name="formType"/><input name="pageUrl"/><input name="bot-field"/>
+    </form>
+    <form name="bh-labs-athletics" netlify netlify-honeypot="bot-field" hidden>
+      <input name="firstName"/><input name="lastName"/><input name="email"/><input name="phone"/>
+      <input name="property"/><input name="role"/><input name="division"/><input name="numberOfSports"/>
+      <input name="currentRecoverySetup"/><input name="availableSpace"/><input name="budgetRange"/>
+      <input name="targetTimeline"/><input name="formType"/><input name="pageUrl"/><input name="bot-field"/>
+    </form>
   </body>
 </html>
