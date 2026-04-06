@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ContactForm } from "@/components/ui/contact-form";
+import { ROICalculator } from "@/components/ui/roi-calculator";
 import { FAQSection } from "@/components/ui/faq-section";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { Button } from "@/components/ui/button";
@@ -108,6 +109,9 @@ export default function Fitness() {
             </motion.div>
           </motion.a>
         </section>
+
+        {/* ROI Calculator */}
+        <ROICalculator type="fitness" />
 
         <section className="py-8 bg-secondary/30 border-b border-border">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
