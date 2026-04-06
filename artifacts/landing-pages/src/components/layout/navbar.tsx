@@ -43,7 +43,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-3">
-            {(location === "/" || location === "/residential") && (
+            {(location === "/" || location === "/residential" || location === "/fitness") && (
               <a
                 href="#calculator"
                 className="hidden lg:inline-flex h-12 items-center justify-center rounded-full bg-emerald-600 px-6 text-sm font-bold text-white transition-all hover:bg-emerald-700 shadow-lg shadow-emerald-600/30 ring-2 ring-emerald-400/30 hover:ring-emerald-400/50 hover:shadow-xl hover:shadow-emerald-600/40 hover:scale-105"
