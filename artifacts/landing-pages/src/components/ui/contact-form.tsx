@@ -248,12 +248,13 @@ export function ContactForm({ type, title, subtitle }: ContactFormProps) {
     const payload = { ...data, ...utmParams, pageUrl: window.location.href, formType: type };
 
     try {
-      // Send to email webhook (delivers to info@thebiohacklab.com + stephan.coles@thebiohacklab.com)
-      await fetch("https://possession-assistant-eagles-positions.trycloudflare.com", {
+      // Send to form relay (delivers email to stephan.coles@thebiohacklab.com + info@thebiohacklab.com)
+      const res = await fetch("https://lamb-surplus-political-mac.trycloudflare.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json",  },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       // Also send to Netlify Forms as backup
       try {

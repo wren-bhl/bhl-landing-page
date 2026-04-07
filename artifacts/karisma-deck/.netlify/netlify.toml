@@ -1,0 +1,29 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/openclaw/.openclaw/workspace/bhl-landing-page/artifacts/karisma-deck/artifacts/landing-pages/dist/public"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "/Users/openclaw/.openclaw/workspace/bhl-landing-page/artifacts/karisma-deck"
+command = "pnpm run netlify:build"
+
+[build.environment]
+NODE_VERSION = "24"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
