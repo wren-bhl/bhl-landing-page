@@ -5,6 +5,13 @@ function fmt(n: number): string {
   return n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 }
 
+function fmtPayback(months: number): string {
+  if (months <= 0) return "—";
+  if (months < 1) return "<1";
+  if (months < 2) return "1";
+  return Math.ceil(months).toString();
+}
+
 export default function ROICalculatorSlide() {
   const [rooms, setRooms] = useState(300);
   const [surcharge, setSurcharge] = useState(10);
@@ -48,17 +55,17 @@ export default function ROICalculatorSlide() {
         <div className="flex items-center gap-[1vw] mb-[1vh]">
           <div className="w-[3vw] h-[0.3vh] bg-accent" />
           <p className="font-body text-accent text-[1.1vw] font-semibold tracking-[0.2em] uppercase">
-            Interactive ROI
+            Interactive
           </p>
         </div>
 
-        <h2 className="font-display text-primary text-[2.4vw] font-bold tracking-tight leading-[1.1] mb-[2vh]">
-          Your Revenue Projection
+        <h2 className="font-display text-primary text-[2.8vw] font-bold tracking-tight leading-[1.1] mb-[2vh]">
+          ROI Calculator
         </h2>
 
         <div className="flex gap-[2.5vw] flex-1">
           {/* Left — Sliders */}
-          <div className="w-[36vw] flex flex-col gap-[1.4vh]">
+          <div className="w-[34vw] flex flex-col gap-[1.4vh]">
             {sliders.map((s) => (
               <div key={s.label}>
                 <div className="flex justify-between mb-[0.3vh]">
@@ -104,65 +111,73 @@ export default function ROICalculatorSlide() {
             </div>
           </div>
 
-          {/* Right — Results */}
+          {/* Right — Results with hero ROI number */}
           <div className="flex-1 flex flex-col gap-[1.2vh]">
-            {/* Per Property */}
+
+            {/* Hero ROI Payback — the big number */}
+            <div className="bg-primary rounded-[1vw] p-[2vw] flex items-center justify-center gap-[2vw]">
+              <div className="text-center">
+                <p className="font-body text-accent text-[1vw] font-semibold uppercase tracking-[0.2em] mb-[0.5vh]">
+                  ROI Payback
+                </p>
+                <div className="flex items-baseline justify-center gap-[0.5vw]">
+                  <p className="font-display text-white text-[6vw] font-bold leading-none">
+                    {fmtPayback(results.paybackMonths)}
+                  </p>
+                  <p className="font-body text-white/60 text-[1.8vw]">
+                    {results.paybackMonths < 1 ? "month" : results.paybackMonths < 2 ? "month" : "months"}
+                  </p>
+                </div>
+                <p className="font-body text-white/40 text-[0.9vw] mt-[0.5vh]">
+                  to recover your ${(results.investmentCost / 1000).toFixed(0)}K investment
+                </p>
+              </div>
+            </div>
+
+            {/* Per Property numbers */}
             <div className="bg-white rounded-[0.8vw] border border-primary/10 p-[1.5vw] flex-1 flex flex-col justify-center">
-              <p className="font-body text-muted text-[0.9vw] font-semibold uppercase tracking-wider mb-[1.5vh]">
+              <p className="font-body text-muted text-[0.85vw] font-semibold uppercase tracking-wider mb-[1.2vh]">
                 Per Property
               </p>
 
-              <div className="flex gap-[2vw] mb-[1.5vh]">
+              <div className="flex gap-[2vw] mb-[1.2vh]">
                 <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">ADR Wellness Surcharge</p>
-                  <p className="font-display text-primary text-[1.5vw] font-bold">{fmt(results.adrMonthly)}<span className="text-[0.9vw] text-muted font-normal">/mo</span></p>
+                  <p className="font-body text-muted text-[0.8vw]">ADR Wellness Surcharge</p>
+                  <p className="font-display text-primary text-[1.4vw] font-bold">{fmt(results.adrMonthly)}<span className="text-[0.85vw] text-muted font-normal">/mo</span></p>
                 </div>
                 <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">À La Carte Sessions</p>
-                  <p className="font-display text-primary text-[1.5vw] font-bold">{fmt(results.alaCarteMonthly)}<span className="text-[0.9vw] text-muted font-normal">/mo</span></p>
+                  <p className="font-body text-muted text-[0.8vw]">À La Carte Sessions</p>
+                  <p className="font-display text-primary text-[1.4vw] font-bold">{fmt(results.alaCarteMonthly)}<span className="text-[0.85vw] text-muted font-normal">/mo</span></p>
                 </div>
               </div>
 
-              <div className="h-[0.1vh] bg-primary/10 mb-[1.5vh]" />
+              <div className="h-[0.1vh] bg-primary/10 mb-[1.2vh]" />
 
               <div className="flex gap-[2vw]">
                 <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">Net Monthly Revenue</p>
-                  <p className="font-display text-accent text-[2vw] font-bold">{fmt(results.netMonthly)}<span className="text-[1vw] text-muted font-normal">/mo</span></p>
+                  <p className="font-body text-muted text-[0.8vw]">Net Monthly Revenue</p>
+                  <p className="font-display text-accent text-[1.6vw] font-bold">{fmt(results.netMonthly)}<span className="text-[0.85vw] text-muted font-normal">/mo</span></p>
                 </div>
                 <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">Annual Revenue</p>
-                  <p className="font-display text-primary text-[2vw] font-bold">{fmt(results.annual)}</p>
-                </div>
-              </div>
-
-              <div className="flex gap-[2vw] mt-[1.2vh]">
-                <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">Investment</p>
-                  <p className="font-display text-primary text-[1.3vw] font-bold">{fmt(results.investmentCost)}</p>
-                </div>
-                <div className="flex-1">
-                  <p className="font-body text-muted text-[0.85vw]">Payback Period</p>
-                  <p className="font-display text-accent text-[1.3vw] font-bold">
-                    {results.paybackMonths < 1 ? "Under 1 Month" : results.paybackMonths < 2 ? "Under 2 Months" : `${Math.ceil(results.paybackMonths)} Months`}
-                  </p>
+                  <p className="font-body text-muted text-[0.8vw]">Annual Revenue</p>
+                  <p className="font-display text-primary text-[1.6vw] font-bold">{fmt(results.annual)}</p>
                 </div>
               </div>
             </div>
 
             {/* Portfolio Total */}
-            <div className="bg-primary rounded-[0.8vw] p-[1.5vw]">
-              <p className="font-body text-accent text-[0.9vw] font-semibold uppercase tracking-wider mb-[1vh]">
+            <div className="bg-primary/10 rounded-[0.8vw] border border-primary/20 p-[1.2vw]">
+              <p className="font-body text-primary text-[0.85vw] font-semibold uppercase tracking-wider mb-[0.8vh]">
                 Portfolio Total ({properties} {properties === 1 ? "Property" : "Properties"})
               </p>
               <div className="flex gap-[2vw] items-end">
                 <div className="flex-1">
-                  <p className="font-body text-white/60 text-[0.85vw]">Annual Portfolio Revenue</p>
-                  <p className="font-display text-white text-[2.5vw] font-bold">{fmt(results.portfolioAnnual)}</p>
+                  <p className="font-body text-muted text-[0.8vw]">Annual Portfolio Revenue</p>
+                  <p className="font-display text-primary text-[2vw] font-bold">{fmt(results.portfolioAnnual)}</p>
                 </div>
                 <div className="flex-1">
-                  <p className="font-body text-white/60 text-[0.85vw]">Total Investment</p>
-                  <p className="font-display text-accent text-[1.8vw] font-bold">{fmt(results.portfolioInvestment)}</p>
+                  <p className="font-body text-muted text-[0.8vw]">Total Investment</p>
+                  <p className="font-display text-accent text-[1.5vw] font-bold">{fmt(results.portfolioInvestment)}</p>
                 </div>
               </div>
             </div>
