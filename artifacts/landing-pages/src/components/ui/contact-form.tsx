@@ -249,7 +249,7 @@ export function ContactForm({ type, title, subtitle }: ContactFormProps) {
 
     try {
       // Send to form relay (delivers email to stephan.coles@thebiohacklab.com + info@thebiohacklab.com)
-      const res = await fetch("https://lamb-surplus-political-mac.trycloudflare.com", {
+      const res = await fetch("https://markets-securities-boxes-downloadable.trycloudflare.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
