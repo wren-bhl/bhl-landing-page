@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/board-deck/"
+title = "BH Labs — The Pivot to Recurring Revenue"
+version = "1.0.0"
+id = "artifacts/board-deck"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/board-deck/" ]
+localPort = 19682
+
+[services.development]
+run = "pnpm --filter @workspace/board-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/board-deck", "run", "build" ]
+publicDir = "artifacts/board-deck/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19682"
+BASE_PATH = "/board-deck/"

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "b-0001",
+    "position": 1,
+    "filepath": "src/pages/slides/TitleSlide.tsx",
+    "title": "The Pivot to Recurring Revenue",
+    "description": "Animated title with gradient text",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0002",
+    "position": 2,
+    "filepath": "src/pages/slides/WhyRecurringSlide.tsx",
+    "title": "Why Recurring Changes Everything",
+    "description": "Three valuation cards revealing in sequence with glow effects",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0003",
+    "position": 3,
+    "filepath": "src/pages/slides/CurrentVsNewSlide.tsx",
+    "title": "Current vs New Model",
+    "description": "Side-by-side comparison, current model fades as new model energizes",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0004",
+    "position": 4,
+    "filepath": "src/pages/slides/RevenueStackSlide.tsx",
+    "title": "Five Recurring Streams",
+    "description": "Animated horizontal bars stacking one by one with margin badges",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0005",
+    "position": 5,
+    "filepath": "src/pages/slides/UnitEconomicsSlide.tsx",
+    "title": "Unit Economics",
+    "description": "Cost vs Revenue with animated arrow and bottom metrics strip",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0006",
+    "position": 6,
+    "filepath": "src/pages/slides/CapitalStrategySlide.tsx",
+    "title": "Capital Strategy",
+    "description": "Three phases with animated timeline connector and phase dots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0007",
+    "position": 7,
+    "filepath": "src/pages/slides/ProjectionSlide.tsx",
+    "title": "3-Year Projection",
+    "description": "Animated table with growing ARR bar chart",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b-0008",
+    "position": 8,
+    "filepath": "src/pages/slides/TheAskSlide.tsx",
+    "title": "The Ask",
+    "description": "Four numbered decisions revealing with glowing circles, closing callout",
+    "speakerNotes": ""
+  }
+]

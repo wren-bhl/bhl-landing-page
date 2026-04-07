@@ -9,6 +9,9 @@ id = "artifacts/mockup-sandbox"
 [[artifacts]]
 id = "artifacts/karisma-deck"
 
+[[artifacts]]
+id = "artifacts/board-deck"
+
 [deployment]
 router = "application"
 deploymentTarget = "autoscale"
